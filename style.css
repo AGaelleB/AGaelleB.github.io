@@ -4,16 +4,21 @@ body {
 }
 
 p {
-    color:aqua;
+    color:rgb(164, 204, 204);
     font-weight: bold;
+    font-size: medium;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 h1 {
-    color:aqua;
+    color:rgb(116, 93, 214);
     font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+
 }
 
 h2 {
-    color:aqua;
+    color:rgb(34, 51, 51);
     font-weight: bold;
 }
+
