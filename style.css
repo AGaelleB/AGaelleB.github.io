@@ -1,0 +1,19 @@
+body {
+    background-image: url("NeigeBK.gif");
+    background-repeat:repeat;
+}
+
+p {
+    color:aqua;
+    font-weight: bold;
+}
+
+h1 {
+    color:aqua;
+    font-weight: bold;
+}
+
+h2 {
+    color:aqua;
+    font-weight: bold;
+}
