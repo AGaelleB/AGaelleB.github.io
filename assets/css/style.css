@@ -1,7 +1,5 @@
 /* assets/css/style.css */
 
-/* assets/css/style.css */
-
 /* Load Oswald font */
 @font-face {
     font-family: 'Oswald';
@@ -65,9 +63,10 @@ a:hover {
 
 /* Footer Styling */
 footer {
-    background-color: #3d3434; /* Couleur de fond du pied de page */
+    background-color: #3d3434;
     padding: 2px 0;
     text-align: center;
+    margin-top: 200px; /* Espace entre le contenu et le footer */
 }
 
 .footer-links {
@@ -91,4 +90,44 @@ footer {
     font-size: 0.9rem;
     text-align: center;
     color: #d3d1d1;
+}
+
+.about-container {
+    text-align: center; 
+    margin-top: 20px;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.icon-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.icon-item {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    font-size: 1rem;
+}
+
+.icon-item i {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.home {
+    margin-bottom: 2rem; 
+    line-height: 1.5;
 }
