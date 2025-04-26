@@ -1,0 +1,94 @@
+/* assets/css/style.css */
+
+/* assets/css/style.css */
+
+/* Load Oswald font */
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fronts/Oswald/Oswald-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+    background: url('../images/background/ocean.jpg') center/cover fixed no-repeat;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Reset margins and paddings */
+h1, h2, h3, h4, h5, h6, p, a {
+    margin: 10;
+    padding: 0;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+p {
+    color: #d3d1d1;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f0c674;
+    text-decoration: underline;
+}
+
+/* Navigation Styling */
+.navigation {
+    list-style: none;
+    margin: 0;
+    padding: 8px 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #4d7de6;
+}
+
+.nav-link {
+    padding: 10px 20px;
+}
+
+.nav-link:hover {
+    background-color: #0866b3;
+    border-radius: 5px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #3d3434; /* Couleur de fond du pied de page */
+    padding: 2px 0;
+    text-align: center;
+}
+
+.footer-links {
+    margin: 15px 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.footer-links a {
+    color: #d3d1d1;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+}
+
+.copyright {
+    font-size: 0.9rem;
+    text-align: center;
+    color: #d3d1d1;
+}
