@@ -21,11 +21,28 @@ body {
 }
 
 /* Reset margins and paddings */
-h1, h2, h3, h4, h5, h6, p, a {
+h1, h4, h5, h6, p, a {
     margin: 10;
     padding: 0;
     text-align: center;
     font-family: 'Oswald', sans-serif;
+}
+
+h2 {
+    margin: 10;
+    padding: 0;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.7rem;
+}
+
+h3 {
+    margin: 10;
+    margin-top: 1rem;;
+    padding: 0;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3rem;
 }
 
 p {
@@ -46,10 +63,11 @@ a:hover {
 .navigation {
     list-style: none;
     margin: 0;
-    padding: 8px 0;
+    padding: 1px 0;
     display: flex;
     justify-content: space-around;
-    background-color: #4d7de6;
+    background-color: #0487b5;
+    margin-bottom: 42px;
 }
 
 .nav-link {
@@ -57,7 +75,7 @@ a:hover {
 }
 
 .nav-link:hover {
-    background-color: #0866b3;
+    background-color: #04427c;
     border-radius: 5px;
 }
 
@@ -128,6 +146,6 @@ footer {
 }
 
 .home {
-    margin-bottom: 2rem; 
+    margin-bottom: 3rem; 
     line-height: 1.5;
 }
