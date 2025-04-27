@@ -47,7 +47,16 @@ h3 {
     font-size: 1.3rem;
 }
 
-h4, h5, h6, p, a {
+h4 {
+    margin: 10;
+    margin-top: 1rem;;
+    padding: 0;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+}
+
+h5, h6, p, a {
     margin: 10;
     padding: 0;
     text-align: center;
