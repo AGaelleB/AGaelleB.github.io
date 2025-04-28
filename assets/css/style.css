@@ -23,8 +23,8 @@ body {
 
 /* Reset margins and paddings */
 h1 {
-    margin-top: 3rem;
-    margin-bottom: 1rem;
+    margin-top: 5rem;
+    /* margin-bottom: 1rem; */
     padding: 0;
     text-align: center;
     font-family: 'Fira_Code', sans-serif;
@@ -33,6 +33,7 @@ h1 {
 
 h2 {
     margin: 10;
+    margin-top: 6rem;
     padding: 0;
     text-align: center;
     font-family: 'Fira_Code', sans-serif;
@@ -91,7 +92,7 @@ a:hover {
     display: flex;
     justify-content: space-around;
     background-color: #202020;
-    margin-bottom: 42px;
+    margin-bottom: 1px;
 }
 
 .nav-link {
@@ -170,7 +171,6 @@ footer {
 }
 
 .home {
-    margin-bottom: 3rem; 
     line-height: 1.5;
 }
 
@@ -195,6 +195,31 @@ footer {
 }
 
 .icon-item i {
-    font-size: 4rem; /* Taille des icônes */
-    margin-bottom: 10px; /* Espace sous l'icône */
+    font-size: 4rem; 
+    margin-bottom: 10px; 
+}
+
+
+/* TIMEQUEST IMG */
+
+.project-logo {
+    width: 100px; 
+    height: auto; 
+    margin: 15px 0; 
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* CARROUSEL */
+
+.carousel-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.carousel-item {
+    text-align: center;
+    max-width: 75%; 
+    margin: 0 auto;
 }
