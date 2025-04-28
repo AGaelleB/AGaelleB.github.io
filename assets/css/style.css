@@ -1,9 +1,9 @@
 /* assets/css/style.css */
 
-/* Load Oswald font */
+/* Load Fira_Code font */
 @font-face {
-    font-family: 'Oswald';
-    src: url('../fronts/Oswald/Oswald-VariableFont_wght.ttf') format('truetype');
+    font-family: 'Fira_Code';
+    src: url('../fronts/Fira_Code/FiraCode-VariableFont_wght.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -11,9 +11,10 @@
 /* General Styles */
 body {
     margin: 0;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Fira_Code', sans-serif;
     color: #ffffff;
-    background: url('../images/background/ocean.jpg') center/cover fixed no-repeat;
+    /* background: url('../images/background/ocean.jpg') center/cover fixed no-repeat; */
+    background-color: #2c2c2c; /* Fond gris foncé */
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -26,7 +27,7 @@ h1 {
     margin-bottom: 1rem;
     padding: 0;
     text-align: center;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Fira_Code', sans-serif;
     font-size: 2rem;
 }
 
@@ -34,7 +35,7 @@ h2 {
     margin: 10;
     padding: 0;
     text-align: center;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Fira_Code', sans-serif;
     font-size: 1.7rem;
 }
 
@@ -43,7 +44,7 @@ h3 {
     margin-top: 1rem;;
     padding: 0;
     text-align: center;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Fira_Code', sans-serif;
     font-size: 1.3rem;
 }
 
@@ -52,7 +53,7 @@ h4 {
     margin-top: 1rem;;
     padding: 0;
     text-align: center;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Fira_Code', sans-serif;
     font-size: 1rem;
 }
 
@@ -60,7 +61,7 @@ h5, h6, p, a {
     margin: 10;
     padding: 0;
     text-align: center;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Fira_Code', sans-serif;
 }
 
 p {
@@ -68,7 +69,7 @@ p {
     margin: 0;
     padding: 0; 
     text-align: center;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Fira_Code', sans-serif;
     line-height: 1.5; 
 }
 
@@ -89,7 +90,7 @@ a:hover {
     padding: 1px 0;
     display: flex;
     justify-content: space-around;
-    background-color: #0487b5;
+    background-color: #202020;
     margin-bottom: 42px;
 }
 
@@ -98,14 +99,14 @@ a:hover {
 }
 
 .nav-link:hover {
-    background-color: #04427c;
+    background-color: #2c2c2c;
     border-radius: 5px;
 }
 
 /* Footer Styling */
 footer {
-    background-color: #3d3434;
-    padding: 2px 0;
+    background-color: #202020;
+    padding: 20px 0;
     text-align: center;
     margin-top: 200px; /* Espace entre le contenu et le footer */
 }
@@ -171,4 +172,29 @@ footer {
 .home {
     margin-bottom: 3rem; 
     line-height: 1.5;
+}
+
+
+/* ICON DEVICON POUR LANGUAGES */
+
+.icon-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+
+.icon-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    /* font-size: 1rem; */
+}
+
+.icon-item i {
+    font-size: 4rem; /* Taille des icônes */
+    margin-bottom: 10px; /* Espace sous l'icône */
 }
