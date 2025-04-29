@@ -24,8 +24,9 @@ function loadPage(page, contentElement) {
             if (page === 'home') {
                 setTimeout(() => {
                     initTypewriter();
+                    setupFadeInOnScroll();
                 }, 100);
-            }
+            }            
         })
         .catch(err => console.error('Error loading page:', err));
 }
@@ -33,7 +34,7 @@ function loadPage(page, contentElement) {
 export function initTypewriter() {
     const welcomeTitle = document.getElementById('welcome-title');
     const welcomeSubtitle = document.getElementById('welcome-subtitle');
-    const titleText = "Bienvenue dans mon Portfolio";
+    const titleText = "Bienvenue";
     const subtitleText = "Découvrez mes projets réalisés lors de ma formation à l'École 42 et plus encore !";
     let titleIndex = 0;
     let subtitleIndex = 0;
@@ -47,7 +48,7 @@ export function initTypewriter() {
         if (titleIndex < titleText.length) {
             welcomeTitle.textContent += titleText.charAt(titleIndex);
             titleIndex++;
-            setTimeout(typeWriterTitle, 80); // Vitesse
+            setTimeout(typeWriterTitle, 70); // Vitesse
         }
         else {
             setTimeout(typeWriterSubtitle, 500);
@@ -59,7 +60,7 @@ export function initTypewriter() {
         if (subtitleIndex < subtitleText.length) {
             welcomeSubtitle.textContent += subtitleText.charAt(subtitleIndex);
             subtitleIndex++;
-            setTimeout(typeWriterSubtitle, 42); // Vitesse
+            setTimeout(typeWriterSubtitle, 35); // Vitesse
         }
     }
     
@@ -67,3 +68,23 @@ export function initTypewriter() {
 
 }
 
+
+export function setupFadeInOnScroll() {
+    const observer = new IntersectionObserver(
+        (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible'); // Ajoute la classe pour l'effet
+                    observer.unobserve(entry.target); // Stoppe l'observation après l'animation
+                }
+            });
+        },
+        {
+            threshold: 0.1, // Déclenche lorsque 10% de l'élément sont visibles
+        }
+    );
+
+    // Ciblez tous les éléments avec la classe fade-in
+    const elements = document.querySelectorAll('.fade-in');
+    elements.forEach(element => observer.observe(element));
+}

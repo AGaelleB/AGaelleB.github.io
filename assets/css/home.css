@@ -135,5 +135,15 @@
 /* Style pour les sections de contenu */
 .content-section {
     padding: 5rem 2rem;
-    min-height: 100vh; /* Pour que chaque section prenne au moins la hauteur de l'écran */
+    min-height: 100vh;
+}
+
+/* FONDU POUR LES TITRE H2 */
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
 }
