@@ -64,3 +64,76 @@
     margin-bottom: 10px; 
 }
 
+
+
+/* ACCEUIL SCROLL */
+
+/* Style pour la section hero plein écran */
+.hero-section {
+    height: 100vh; /* Prend toute la hauteur de l'écran */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+    background-color: var(--bg-color);
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+#welcome-title {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+#welcome-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+/* Style pour la flèche de défilement */
+.scroll-indicator {
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.scroll-down-arrow {
+    font-size: 2rem;
+    color: var(--primary-color); 
+    transition: all 0.3s ease;
+}
+
+.scroll-down-arrow:hover {
+    color: var(--accent-color); 
+    transform: translateY(5px);
+}
+
+/* Animation de rebond pour la flèche */
+.bounce {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-15px);
+    }
+    60% {
+        transform: translateY(-7px);
+    }
+}
+
+/* Style pour les sections de contenu */
+.content-section {
+    padding: 5rem 2rem;
+    min-height: 100vh; /* Pour que chaque section prenne au moins la hauteur de l'écran */
+}

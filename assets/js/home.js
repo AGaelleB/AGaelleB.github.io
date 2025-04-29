@@ -30,8 +30,6 @@ function loadPage(page, contentElement) {
         .catch(err => console.error('Error loading page:', err));
 }
 
-
-
 export function initTypewriter() {
     const welcomeTitle = document.getElementById('welcome-title');
     const welcomeSubtitle = document.getElementById('welcome-subtitle');
@@ -61,9 +59,11 @@ export function initTypewriter() {
         if (subtitleIndex < subtitleText.length) {
             welcomeSubtitle.textContent += subtitleText.charAt(subtitleIndex);
             subtitleIndex++;
-            setTimeout(typeWriterSubtitle, 50); // Vitesse
+            setTimeout(typeWriterSubtitle, 42); // Vitesse
         }
     }
     
     typeWriterTitle();
+
 }
+
