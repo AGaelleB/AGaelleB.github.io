@@ -1,0 +1,66 @@
+/* assets/css/home.css */
+
+/* ANIMATION TEXTE BIENVENUE */
+#typewriter {
+    color: #0077cc;
+    font-family: 'Fira_Code', sans-serif;
+    font-size: 2.5rem;
+    border-right: 2px solid #0077cc; /* Curseur clignotant */
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+}
+
+/* TIMEQUEST IMG */
+.project-logo {
+    width: 130px; 
+    height: auto; 
+    margin: 15px 0; 
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* 42 LOGO */
+.quarantedeux-logo {
+    width: 100px;
+    height: auto;
+    margin: 15px 0;
+}
+
+/* CARROUSEL */
+.carousel-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    min-height: 200px;
+}
+
+.carousel-item {
+    text-align: center;
+    max-width: 75%; 
+    margin: 0 auto;
+}
+
+/* ICON DEVICON POUR LANGUAGES */
+.icon-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+
+.icon-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    /* font-size: 1rem; */
+}
+
+.icon-item i {
+    font-size: 4rem; 
+    margin-bottom: 10px; 
+}
+
