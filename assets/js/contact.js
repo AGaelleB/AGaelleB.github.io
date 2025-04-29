@@ -1,5 +1,7 @@
 // assets/js/contact.js
 
+// reutiliser ma fonction pour apliquer aussi a mon tite le typewritter
+
 document.querySelector('.contact-form form').addEventListener('submit', function (event) {
     event.preventDefault(); // Empêche le rechargement de la page
 
@@ -24,3 +26,4 @@ document.querySelector('.contact-form form').addEventListener('submit', function
     // Réinitialiser le formulaire
     this.reset();
 });
+

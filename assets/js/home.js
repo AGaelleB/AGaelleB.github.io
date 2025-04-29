@@ -26,7 +26,17 @@ function loadPage(page, contentElement) {
                     initTypewriter();
                     setupFadeInOnScroll();
                 }, 100);
-            }            
+            }
+            else if (page === 'contact') {
+                setTimeout(() => {
+                    setupFadeInOnScroll();
+                }, 100);
+            }
+            else if (page === 'about') {
+                setTimeout(() => {
+                    setupFadeInOnScroll();
+                }, 100);
+            }         
         })
         .catch(err => console.error('Error loading page:', err));
 }
@@ -63,9 +73,7 @@ export function initTypewriter() {
             setTimeout(typeWriterSubtitle, 35); // Vitesse
         }
     }
-    
     typeWriterTitle();
-
 }
 
 
