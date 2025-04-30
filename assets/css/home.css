@@ -2,10 +2,10 @@
 
 /* ANIMATION TEXTE BIENVENUE */
 #typewriter {
-    color: #0077cc;
+    /* color: #0077cc; */
     font-family: 'Fira_Code', sans-serif;
     font-size: 2.5rem;
-    border-right: 2px solid #0077cc; /* Curseur clignotant */
+    /* border-right: 2px solid #0077cc; Curseur clignotant */
     white-space: nowrap;
     overflow: hidden;
     display: inline-block;

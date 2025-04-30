@@ -1,8 +1,28 @@
-// // assets/js/projects.js
+// assets/js/projects.js
 
-
-
-// j ai une page avec tous mes projets, j ai donc fait un file projects.css, projects.html et project.js
-
-// ici je voudrais faire defiler des cases ou j affichereai une photo du projet, le titre, un petit descriptif. Puis je voudrais animer ca, je je scrolle je veux qu un nouveau projet aparraisse, par exemple projet TimeQuest, puis ft_transcendence, puis Minishell etc. 
-// Comment puis je faire ca ? ou trouver des exemple d annimation ainsi que le code ? j ai l idee en tete mais je ne sais pas comment le realiser
+export function initProjects() {
+    // Initialise les animations AOS
+    if (typeof AOS !== 'undefined') {
+      AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: false, // animations se répètent si on scrolle à nouveau
+        mirror: false
+      });
+    }
+    
+    // Autres initialisations spécifiques aux projets si nécessaire
+  }
+  
+  export function loadProjectPage(contentElement) {
+    // Charge le contenu HTML de la page projets
+    fetch('templates/projects.html')
+      .then(response => response.text())
+      .then(html => {
+        contentElement.innerHTML = html;
+        
+        // Initialise les animations et fonctionnalités de la page projets
+        initProjects();
+      })
+      .catch(err => console.error('Error loading projects page:', err));
+  }

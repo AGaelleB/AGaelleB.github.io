@@ -1,2 +1,116 @@
 /* assets/css/projects.css */
 
+.projects-header {
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+  
+  .projects-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 6rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background-color: var(--card-bg-color, #202020);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Pour les écrans plus grands */
+  @media (min-width: 768px) {
+    .project-card {
+      flex-direction: row;
+      height: 350px;
+    }
+    
+    .project-card:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .project-image {
+    flex: 1;
+    overflow: hidden;
+  }
+  
+  .project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .project-card:hover .project-image img {
+    transform: scale(1.05);
+  }
+  
+  .project-info {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+  }
+  
+  .project-info h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+  }
+  
+  .tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  .tech-stack span {
+    background-color: var(--tech-tag-bg, #2c2c2c);
+    color: var(--tech-tag-text, #ffffff);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
+  }
+
+/* POLICES */
+.h1project {
+    padding: 0;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-family: 'Fira_Code', sans-serif;
+    font-size: 2rem;
+}
+
+/* GITHUB BUTTON*/
+.github-link {
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+.github-link a .bi-github {
+    font-size: 40px; 
+    color: white; 
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.github-link a .bi-github:hover {
+    transform: scale(1.1); 
+    color: #ccc; 
+}

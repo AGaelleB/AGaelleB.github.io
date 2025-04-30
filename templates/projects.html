@@ -1,120 +1,82 @@
 <!-- templates/project.html -->
 
-<!-- <main>
-    <section class="home-intro">
-        <p>Découvrez mon parcours et mes projets réalisés lors de ma formation à l'École 42 et plus encore !</p>
-        <p>Cliquez sur un projet pour en savoir plus</p>
-    </section>
+<!-- templates/project.html -->
 
-    <section class="projects-list">
-        <h2>Mes Projets</h2>
-        <ul class="projects-grid">
-            <li class="project-item">
-                <a href="/projects/libft">
-                    <img src="assets/images/projects/libft.jpg" alt="Libft">
-                    <h3>Libft</h3>
-                    <p>Création d'une bibliothèque personnelle en C.</p>
-                </a>
-            </li>
-            <li class="project-item">
-                <a href="/projects/ft_printf">
-                    <img src="assets/images/projects/ft_printf.jpg" alt="ft_printf">
-                    <h3>ft_printf</h3>
-                    <p>Réimplémentation de la fonction printf.</p>
-                </a>
-            </li>
-            <li class="project-item">
-                <a href="/projects/get_next_line">
-                    <img src="assets/images/projects/get_next_line.jpg" alt="get_next_line">
-                    <h3>get_next_line</h3>
-                    <p>Lecture ligne par ligne d'un fichier en C.</p>
-                </a>
-            </li>
-            <li class="project-item">
-                <a href="/projects/born2beroot">
-                    <img src="assets/images/projects/born2beroot.jpg" alt="Born2beroot">
-                    <h3>Born2beroot</h3>
-                    <p>Configuration d'une machine virtuelle sécurisée.</p>
-                </a>
-            </li>
-            <li class="project-item">
-                <a href="/projects/so_long">
-                    <img src="assets/images/projects/so_long.jpg" alt="so_long">
-                    <h3>so_long</h3>
-                    <p>Développement d'un jeu vidéo 2D en C.</p>
-                </a>
-            </li>
-            <li class="project-item">
-                <a href="/projects/push_swap">
-                    <img src="assets/images/projects/push_swap.jpg" alt="push_swap">
-                    <h3>Push_swap</h3>
-                    <p>Algorithme de tri optimisé avec des instructions restreintes.</p>
-                </a>
-            </li>
-            <li class="project-item">
-                <a href="/projects/pipex">
-                    <img src="assets/images/projects/pipex.jpg" alt="pipex">
-                    <h3>Pipex</h3>
-                    <p>Recréation des tubes Unix en C.</p>
-                </a>
-            </li>
-            <li class="project-item">
-                <a href="/projects/philosophers">
-                    <img src="assets/images/projects/philosophers.jpg" alt="Philosophers">
-                    <h3>Philosophers</h3>
-                    <p>Simulation du problème des philosophes.</p>
-                </a>
-            </li>
-            <li class="project-item">
-                <a href="/projects/minishell">
-                    <img src="assets/images/projects/minishell.jpg" alt="Minishell">
-                    <h3>Minishell</h3>
-                    <p>Création d'un mini-interpréteur de commandes.</p>
-                </a>
-            </li>
-            <li class="project-item">
-                <a href="/projects/netpractice">
-                    <img src="assets/images/projects/netpractice.jpg" alt="Netpractice">
-                    <h3>Netpractice</h3>
-                    <p>Résolution de problèmes réseau.</p>
-                </a>
-            </li>
-            <li class="project-item">
-                <a href="/projects/cub3d">
-                    <img src="assets/images/projects/cub3d.jpg" alt="Cub3D">
-                    <h3>Cub3D</h3>
-                    <p>Développement d'un jeu 3D avec raycasting.</p>
-                </a>
-            </li>
-            <li class="project-item">
-                <a href="/projects/piscine_cpp">
-                    <img src="assets/images/projects/piscine_cpp.jpg" alt="Piscine C++">
-                    <h3>Piscine C++</h3>
-                    <p>Introduction à la programmation orientée objet.</p>
-                </a>
-            </li>
-            <li class="project-item">
-                <a href="/projects/ft_irc">
-                    <img src="assets/images/projects/ft_irc.jpg" alt="ft_irc">
-                    <h3>ft_irc</h3>
-                    <p>Création d'un serveur IRC.</p>
-                </a>
-            </li>
-            <li class="project-item">
-                <a href="/projects/inception">
-                    <img src="assets/images/projects/inception.jpg" alt="Inception">
-                    <h3>Inception</h3>
-                    <p>Architecture de conteneurs Docker.</p>
-                </a>
-            </li>
-            <li class="project-item">
-                <a href="/projects/ft_transcendence">
-                    <img src="assets/images/projects/ft_transcendence.jpg" alt="ft_transcendence">
-                    <h3>ft_transcendence</h3>
-                    <p>Application web complète et jeu en ligne.</p>
-                </a>
-            </li>
-        </ul>
-    </section>
-</main> -->
+<section class="projects-header">
+    <h1 data-aos="fade-down">Mes Projets</h1>
+    <p data-aos="fade-up" data-aos-delay="300">Voici une sélection de mes travaux réalisés au cours de ma formation à l'École 42 et en autonomie.</p>
+</section>
 
+<div class="projects-container">
+
+    <!-- TimeQuest -->
+    <div class="project-card" data-aos="fade-up">
+        <div class="project-image">
+            <img src="assets/images/projects/timequest.png" alt="TimeQuest">
+        </div>
+        <div class="project-info">
+            <h1project class="h1project">TimeQuest</h1project>
+            <p>TimeQuest est un jeu mobile où les joueurs doivent deviner le plus rapidement possible la date d'événements marquants. Jouable en solo ou en multijoueur.</p>
+            <div class="tech-stack">
+                <span>TypeScript</span>
+                <span>Javascript</span>
+                <span>React Native</span>
+                <!-- <span>Firebase</span> -->
+            </div>
+            <div class="github-link">
+                <a href="https://github.com/AGaelleB/MobileApp" target="_blank">
+                    <i class="bi bi-github" aria-label="GitHub Logo"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ft_transcendence -->
+    <div class="project-card" data-aos="fade-up">
+        <div class="project-image">
+            <img src="assets/images/projects/ft_transcendence2.gif" alt="TimeQuest">
+        </div>
+        <div class="project-info">
+            <h1project class="h1project">Ft_transcendence</h1project>
+            <p>Projet final de l'ecole 42 visant à réaliser un jeu pong et intégrer des fonctionnalités avancées.</p>
+            <div class="tech-stack">
+                <span>Javascript</span>
+                <span>CSS</span>
+                <span>Html</span>
+                <span>Python</span>
+                <span>Shell</span>
+                <span>Makefile</span>
+                <span>Dockerfile</span>
+            </div>
+            <div class="github-link">
+                <a href="https://github.com/AGaelleB/15-ft_transcendence" target="_blank">
+                    <i class="bi bi-github" aria-label="GitHub Logo"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Inception -->
+    <div class="project-card" data-aos="fade-up">
+        <div class="project-image">
+            <img src="assets/images/projects/Inception.webp" alt="TimeQuest">
+        </div>
+        <div class="project-info">
+            <h1project class="h1project">Inception</h1project>
+            <p>Configuration et orchestration de conteneurs Docker pour une infrastructure de développement en réseau.</p>
+            <div class="tech-stack">
+                <span>HTML</span>
+                <span>Dockerfile</span>
+                <span>Shell</span>
+                <span>Makefile</span>
+            </div>
+            <div class="github-link">
+                <a href="https://github.com/AGaelleB/14-Inception" target="_blank">
+                    <i class="bi bi-github" aria-label="GitHub Logo"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+</div>
