@@ -20,30 +20,27 @@ function loadPage(page, contentElement) {
         .then(html => {
             contentElement.innerHTML = html;
             
-            // effet typewriter 
-            if (page === 'home') {
-                setTimeout(() => {
+            setTimeout(() => {
+                setupFadeInOnScroll();
+                const welcomeTitle = document.getElementById('welcome-title');
+                if (welcomeTitle) {
                     initTypewriter();
-                    setupFadeInOnScroll();
-                }, 100);
-            }
-            else if (page === 'contact') {
-                setTimeout(() => {
-                    setupFadeInOnScroll();
-                }, 100);
-            }
-            else if (page === 'about') {
-                setTimeout(() => {
-                    setupFadeInOnScroll();
-                }, 100);
-            }         
+                }
+            }, 100);
         })
         .catch(err => console.error('Error loading page:', err));
 }
 
+
 export function initTypewriter() {
     const welcomeTitle = document.getElementById('welcome-title');
     const welcomeSubtitle = document.getElementById('welcome-subtitle');
+
+    if (!welcomeTitle || !welcomeSubtitle) {
+        console.error("Les éléments 'welcome-title' et 'welcome-subtitle' sont introuvables.");
+        return;
+    }
+
     const titleText = "Bienvenue";
     const subtitleText = "Découvrez mes projets réalisés lors de ma formation à l'École 42 et plus encore !";
     let titleIndex = 0;
