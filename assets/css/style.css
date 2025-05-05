@@ -69,7 +69,17 @@ h5 {
     font-size: 1.3rem;
 }
 
-h6, p, a {
+h6 {
+    /* margin: 1; */
+    /* margin-top: 1.6rem;; */
+    /* margin-bottom: 1.5rem;; */
+    padding: 0;
+    text-align: center;
+    font-family: 'Fira_Code', sans-serif;
+    font-size: 1rem;
+}
+
+p, a {
     margin: 10;
     padding: 0;
     text-align: center;
