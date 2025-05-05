@@ -16,7 +16,7 @@ export function initProjects() {
   
   export function loadProjectPage(contentElement) {
     // Charge le contenu HTML de la page projets
-    fetch('templates/projects.html')
+    fetch('templates/home.html')
       .then(response => response.text())
       .then(html => {
         contentElement.innerHTML = html;
