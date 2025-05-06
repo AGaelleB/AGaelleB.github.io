@@ -29,6 +29,12 @@ function loadPage(page, contentElement) {
                 if (welcomeTitle) {
                     initTypewriter();
                 }
+
+                const heroSection = document.querySelector('.hero-section');
+                if (heroSection && typeof particlesJS !== 'undefined') {
+                    initParticlesBackground();
+                }
+
                 applyThemeToLoadedPage();
             }, 100);
         })
@@ -41,13 +47,14 @@ export function initTypewriter() {
     const welcomeSubtitle = document.getElementById('welcome-subtitle');
     const welcomeImage = document.querySelector('.hex-container');
 
-    if (!welcomeTitle || !welcomeSubtitle || !welcomeImage) {
+    if (!welcomeTitle || !welcomeSubtitle) { // || !welcomeImage) {
         console.error("Les éléments 'welcome-title', 'welcome-subtitle' ou l'image sont introuvables.");
         return;
     }
 
     const titleText = "Bienvenue";
-    const subtitleText = "Découvrez mes projets réalisés lors de ma formation à l'École 42 et plus encore !";
+    const subtitleText = "Reconvertie et diplômée de l'École 42, je suis passionnée par le développement web,\nà la recherche d'un stage ou d'un poste junior!";
+
     let titleIndex = 0;
     let subtitleIndex = 0;
 
@@ -55,19 +62,15 @@ export function initTypewriter() {
     welcomeTitle.textContent = '';
     welcomeSubtitle.textContent = '';
     
-    // Cacher l'image hexagonale au démarrage
-    // welcomeImage.style.opacity = '0';
-    // welcomeImage.style.transition = 'opacity 1s ease-in-out';
-
     // Effet de frappe pour le titre
     function typeWriterTitle() {
         if (titleIndex < titleText.length) {
             welcomeTitle.textContent += titleText.charAt(titleIndex);
             titleIndex++;
             setTimeout(typeWriterTitle, 70); // Vitesse
-        } else {
-            setTimeout(typeWriterSubtitle, 500);
         }
+        else
+            setTimeout(typeWriterSubtitle, 500);
     }
 
     // Effet de frappe pour le sous-titre
@@ -75,15 +78,9 @@ export function initTypewriter() {
         if (subtitleIndex < subtitleText.length) {
             welcomeSubtitle.textContent += subtitleText.charAt(subtitleIndex);
             subtitleIndex++;
-            setTimeout(typeWriterSubtitle, 35); // Vitesse
-        } else {
-            // Afficher l'image après l'animation du sous-titre
-            setTimeout(() => {
-                welcomeImage.style.opacity = '1';
-            }, 300);
+            setTimeout(typeWriterSubtitle, 30); // Vitesse
         }
     }
-
     typeWriterTitle();
 }
 
@@ -105,4 +102,101 @@ export function setupFadeInOnScroll() {
     // Ciblez tous les éléments avec la classe fade-in
     const elements = document.querySelectorAll('.fade-in');
     elements.forEach(element => observer.observe(element));
+}
+
+
+function initParticlesBackground() {
+    particlesJS('particles-js', {
+        "particles": {
+            "number": {
+                "value": 120,
+                "density": {
+                    "enable": true,
+                    "value_area": 800
+                }
+            },
+            "color": {
+                "value": "#ffffff"
+            },
+            "shape": {
+                "type": "circle",
+                "stroke": {
+                    "width": 0,
+                    "color": "#000000"
+                },
+                "polygon": {
+                    "nb_sides": 5
+                }
+            },
+            "opacity": {
+                "value": 0.5,
+                "random": true,
+                "anim": {
+                    "enable": true,
+                    "speed": 1,
+                    "opacity_min": 0,
+                    "sync": false
+                }
+            },
+            "size": {
+                "value": 3,
+                "random": true,
+                "anim": {
+                    "enable": false,
+                    "speed": 4,
+                    "size_min": 0.3,
+                    "sync": false
+                }
+            },
+            "line_linked": {
+                "enable": false,
+                "distance": 150,
+                "color": "#ffffff",
+                "opacity": 0.4,
+                "width": 1
+            },
+            "move": {
+                "enable": true,
+                "speed": 1,
+                "direction": "none",
+                "random": true,
+                "straight": false,
+                "out_mode": "out",
+                "bounce": false,
+                "attract": {
+                    "enable": false,
+                    "rotateX": 600,
+                    "rotateY": 600
+                }
+            }
+        },
+        "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+                "onhover": {
+                    "enable": true,
+                    "mode": "bubble"
+                },
+                "onclick": {
+                    "enable": true,
+                    "mode": "repulse"
+                },
+                "resize": true
+            },
+            "modes": {
+                "bubble": {
+                    "distance": 250,
+                    "size": 0,
+                    "duration": 2,
+                    "opacity": 0,
+                    "speed": 3
+                },
+                "repulse": {
+                    "distance": 400,
+                    "duration": 0.4
+                }
+            }
+        },
+        "retina_detect": true
+    });
 }

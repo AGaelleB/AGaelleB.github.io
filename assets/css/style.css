@@ -107,10 +107,14 @@ a:hover {
 
 /* Navigation Styling */
 .navigation {
+    position: fixed;
+    width: 99%;
+    z-index: 10;
     list-style: none;
     margin: 0;
     display: flex;
     justify-content: space-around;
+    /* background-color: #202020; */
     background-color: #202020;
     margin-bottom: 1px;
     border-radius: 15px;
@@ -163,6 +167,7 @@ footer {
 .about-container {
     text-align: center; 
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .home {

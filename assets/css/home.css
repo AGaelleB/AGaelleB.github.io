@@ -11,97 +11,6 @@
     display: inline-block;
 }
 
-/* PHOTO */
-/* Style pour l'hexagone */
-.hex-container {
-    display: flex;
-    justify-content: center;
-    /* margin: 40px 0; */
-  }
-  
-  .hex-image-wrapper {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    margin: 0 auto;
-    /* clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); */
-    clip-path: circle(50% at 50% 50%);
-    margin-top: 50px;
-
-    /* clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); */
-    overflow: hidden;
-    transform: rotate(0deg);
-    transition: transform 0.8s ease;
-    z-index: 2;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  }
-  
-  .hex-image-wrapper:hover {
-    transform: rotate(5deg) scale(1.05);
-  }
-  
-  .hex-image-wrapper::before {
-    content: '';
-    position: absolute;
-    top: -3px;
-    left: -3px;
-    right: -3px;
-    bottom: -3px;
-    background: linear-gradient(45deg, var(--accent-color), var(--primary-color));
-    z-index: -1;
-    /* clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); */
-    /* clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); */
-    animation: borderGlow 4s infinite alternate;
-  }
-  
-  @keyframes borderGlow {
-    0% {
-      filter: brightness(1) drop-shadow(0 0 5px var(--primary-color));
-    }
-    100% {
-      filter: brightness(1.2) drop-shadow(0 0 15px var(--accent-color));
-    }
-  }
-  
-  #welcome-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    display: block;
-  }
-  
-
-#welcome-image {
-    /* margin-top: 20px; */
-    width: 300px;
-    border-radius: 10px;
-}
-
-/* TIMEQUEST IMG */
-.project-logo {
-    width: 130px; 
-    height: auto; 
-    margin: 15px 0; 
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-
-/* CARROUSEL */
-.carousel-inner {
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    min-height: 200px;
-}
-
-.carousel-item {
-    text-align: center;
-    max-width: 75%; 
-    margin: 0 auto;
-}
-
 /* ICON DEVICON POUR LANGUAGES */
 .icon-list {
     list-style: none;
@@ -124,7 +33,6 @@
     font-size: 4rem; 
     margin-bottom: 10px; 
 }
-
 
 
 /* ACCEUIL SCROLL */
@@ -157,7 +65,7 @@
 /* Style pour la flèche de défilement */
 .scroll-indicator {
     position: absolute;
-    bottom: 2rem;
+    bottom: 6rem;
     left: 0;
     right: 0;
     text-align: center;
@@ -205,4 +113,38 @@
 
 .fade-in.visible {
     opacity: 1;
+}
+
+
+/* INTRO GALAXY ANIME */
+.animated-background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(125deg, #202020, #2c2c2c, #1a1a1a, #2c2c2c, #202020);
+
+    background-size: 400% 400%;
+    animation: gradientBackground 15s ease infinite;
+    z-index: -2;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }

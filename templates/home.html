@@ -2,17 +2,18 @@
 
 <!-- SECTION HERO PLEIN ÉCRAN -->
 <section class="hero-section">
+
+  <!-- Fond animé Galaxie-->
+  <div class="animated-background"></div>
+  <div id="particles-js"></div>
+  
+  <!-- Message d'accueil -->
   <div class="hero-content">
       <h1 id="welcome-title"></h1>
       <p id="welcome-subtitle"></p>
-      <!-- Container pour photo de profil -->
-      <div class="hex-container">
-        <div class="hex-image-wrapper">
-          <img id="welcome-image" src="assets/images/icons/abonnefo.jpg" alt="moi">
-        </div>
-      </div>
       <div class="scroll-indicator">
-          <a href="#content-home-section" class="scroll-down-arrow">
+          <!-- <a href="#content-home-section" class="scroll-down-arrow"> -->
+          <a href="#content-me-section" class="scroll-down-arrow">
               <i class="fas fa-chevron-down bounce"></i>
           </a>
       </div>
@@ -20,88 +21,23 @@
 </section>
 
 
-<!-- LANGUAGES & TECHNO -->
-<section id="content-home-section" class="content-section">
-  <h2 class="fade-in">👉 Langages & Technologies :</h2>
 
-  <h5 class="fade-in">🖥️ Langages de programmation</h5>
-  <ul class="icon-list">
-      <li class="icon-item">
-          <i class="devicon-c-plain" style="color: #A8B9CC;" title="C"></i>
-      </li>
-      <li class="icon-item">
-          <i class="devicon-cplusplus-plain" style="color: #00599C;" title="C++"></i>
-      </li>
-      <li class="icon-item">
-          <i class="devicon-javascript-plain" style="color: #F7DF1E;" title="JavaScript"></i>
-      </li>
-      <li class="icon-item">
-          <i class="devicon-typescript-plain" style="color: #3178C6;" title="TypeScript"></i>
-      </li>
-  </ul>
-
-  <h5 class="fade-in">🎨 Front-end</h5>
-  <ul class="icon-list">
-      <li class="icon-item">
-          <i class="devicon-html5-plain" style="color: #E34F26;" title="HTML"></i>
-      </li>
-      <li class="icon-item">
-          <i class="devicon-css3-plain" style="color: #1572B6;" title="CSS"></i>
-      </li>
-      <li class="icon-item">
-          <i class="devicon-bootstrap-plain" style="color: #7952B3;" title="Bootstrap"></i>
-      </li>
-      <li class="icon-item">
-          <i class="devicon-react-original" style="color: #61DAFB;" title="React"></i>
-      </li>
-  </ul>
-
-  <h5 class="fade-in">⚙️ Back-end</h5>
-  <ul class="icon-list">
-      <li class="icon-item">
-          <i class="devicon-docker-plain" style="color: #2496ED;" title="Docker"></i>
-      </li>
-      <li class="icon-item">
-          <i class="devicon-linux-plain" style="color: #FCC624;" title="Linux"></i>
-      </li>
-      <li class="icon-item">
-          <i class="devicon-bash-plain" style="color: #4EAA25;" title="Bash"></i>
-      </li>
-  </ul>
-
-  <h5 class="fade-in">🛠️ Outils</h5>
-  <ul class="icon-list">
-      <li class="icon-item">
-          <i class="devicon-git-plain" style="color: #F05032;" title="Git"></i>
-      </li>
-      <li class="icon-item">
-          <i class="devicon-github-original" style="color: #181717;" title="GitHub"></i>
-      </li>
-      <li class="icon-item">
-          <i class="devicon-visualstudio-plain" style="color: #007ACC;" title="Visual Studio Code"></i>
-      </li>
-  </ul>
-</section>
-
-
-
-
-<!-- À propos de moi -->
-<section class="about">
-  <div class="about-container">
-      <h1 class="h1about">À propos de moi :</h1>
+<!-- A PROPOS DE MOI -->
+<section id="content-me-section" class="fade-in about">
+  <div class="fade-in about-container">
+      <h1about class="fade-in h1about">À propos de moi :</h1about>
 
       <!-- Dispo et localisation -->
-      <section class="about">
-          <div class="about-container">
+      <section class="fade-in about">
+          <div class="fade-in about-container">
               <br>
-              <h6 class="fade-in">📍 Développeuse web basée à Toulouse</h6>
-              <h6 class="fade-in">📅 Disponible immédiatement pour un stage ou un poste junior en développement web</h6>
+              <h3 class="fade-in">📍 Basée à Toulouse</h3>
+              <h3 class="fade-in">📅 Disponible immédiatement pour un stage ou un poste junior en développement web</h3>
               <br>
           </div>
       </section>
-      <div class="qualities-section">
-          <div class="quality-card-title">
+      <div class="fade-in qualities-section">
+          <div class="fade-in quality-card-title">
               <img src="assets/images/icons/abonnefo.jpg" alt="Photo de profil" class="profile-image fade-in">
           </div>
           <div class="quality-card-full">
@@ -117,164 +53,109 @@
   </div>
 </section>
 
-<!-- Qualités, Langues, Loisirs, Réseaux -->
-<section class="qualities-section">
-  <div class="quality-card">
-      <h1about class="h1about">Qualités principales</h1about>
+
+
+<!-- QUALITÉS, LANGUES, LOISIRS, RÉSEAUX -->
+<section class="fade-in qualities-section">
+  <div class="fade-in quality-card">
+      <h1about class="fade-in h1about">Qualités principales</h1about>
       <p>✔️ Minutieuse et sérieuse</p>
       <p>✔️ Autonome</p>
       <p>✔️ Forte capacité d'adaptation</p>
   </div>
-  <div class="quality-card">
-      <h1about class="h1about">Langues</h1about>
+  <div class="fade-in quality-card">
+      <h1about class="fade-in h1about">Langues</h1about>
       <p>🇫🇷 Français : langue natale</p>
       <p>🇬🇧 Anglais : bonnes notions (TOEIC 760)</p>
       <p>🇪🇸 Espagnol : notions scolaires</p>
   </div>
-  <div class="quality-card">
-      <h1about class="h1about">Loisirs</h1about>
+  <div class="fade-in quality-card">
+      <h1about class="fade-in h1about">Loisirs</h1about>
       <p>✈️ Voyages</p>
       <p>🏞️ Randonnées</p>
       <p>🏃‍♀️ Course à pied</p>
   </div>
-  <div class="quality-card">
-      <h1about class="h1about">Réseaux</h1about>
+  <div class="fade-in quality-card">
+      <h1about class="fade-in h1about">Réseaux</h1about>
       <a href="https://github.com/AGaelleB" target="_blank"><i class="fab fa-github"></i> GitHub</a>
       <a href="https://www.linkedin.com/in/anne-gaëlle-bonnefoy-3b7348107/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
   </div>
 </section>
 
-<!-- CV -->
-<section class="cv">
-  <div class="cv-container">
-      <h1 class="fade-in">📄 Mon CV :</h1>
-      <a href="assets/files/CV_AnneGaelleBonnefoy.pdf" download class="btn-download">📥 Télécharger mon CV</a>
-  </div>
+
+
+<!-- LANGUAGES & TECHNO -->
+<section id="content-home-section" class="content-section">
+  <div class="about-container">
+    <h1about class="fade-in fade-in h1about">👉 Langages & Technologies :</h1about>
+
+
+  <h5 class="fade-in">🖥️ Langages de programmation</h5>
+  <ul class="icon-list">
+      <li class="icon-item">
+          <i class="fade-in devicon-c-plain" style="color: #A8B9CC;" title="C"></i>
+      </li>
+      <li class="icon-item">
+          <i class="fade-in devicon-cplusplus-plain" style="color: #00599C;" title="C++"></i>
+      </li>
+      <li class="icon-item">
+          <i class="fade-in devicon-javascript-plain" style="color: #F7DF1E;" title="JavaScript"></i>
+      </li>
+      <li class="icon-item">
+          <i class="fade-in devicon-typescript-plain" style="color: #3178C6;" title="TypeScript"></i>
+      </li>
+  </ul>
+
+  <h5 class="fade-in">🎨 Front-end</h5>
+  <ul class="icon-list">
+      <li class="icon-item">
+          <i class="fade-in devicon-html5-plain" style="color: #E34F26;" title="HTML"></i>
+      </li>
+      <li class="icon-item">
+          <i class="fade-in devicon-css3-plain" style="color: #1572B6;" title="CSS"></i>
+      </li>
+      <li class="icon-item">
+          <i class="fade-in devicon-bootstrap-plain" style="color: #7952B3;" title="Bootstrap"></i>
+      </li>
+      <li class="icon-item">
+          <i class="fade-in devicon-react-original" style="color: #61DAFB;" title="React"></i>
+      </li>
+  </ul>
+
+  <h5 class="fade-in">⚙️ Back-end</h5>
+  <ul class="icon-list">
+      <li class="icon-item">
+          <i class="fade-in devicon-docker-plain" style="color: #2496ED;" title="Docker"></i>
+      </li>
+      <li class="icon-item">
+          <i class="fade-in devicon-linux-plain" style="color: #FCC624;" title="Linux"></i>
+      </li>
+      <li class="icon-item">
+          <i class="fade-in devicon-bash-plain" style="color: #4EAA25;" title="Bash"></i>
+      </li>
+  </ul>
+
+  <h5 class="fade-in">🛠️ Outils</h5>
+  <ul class="icon-list">
+      <li class="icon-item">
+          <i class="fade-in devicon-git-plain" style="color: #F05032;" title="Git"></i>
+      </li>
+      <li class="icon-item">
+          <i class="fade-in devicon-github-original" style="color: #181717;" title="GitHub"></i>
+      </li>
+      <li class="icon-item">
+          <i class="fade-in devicon-visualstudio-plain" style="color: #007ACC;" title="Visual Studio Code"></i>
+      </li>
+  </ul>
 </section>
 
 
-<!-- PROJETS PERSOS -->
-<!-- <h2 class="fade-in">🌟 Projet personnel :</h2>
-<section class="home">
-    <section id="timequest-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="d-flex flex-column align-items-center">
-              <img src="assets/images/icons/TimeQuest.png" alt="Logo TimeQuest" class="project-logo">
-              <p>TimeQuest est un jeu mobile où les joueurs doivent deviner le plus rapidement possible la date d'événements marquants. Jouable en solo ou en multijoueur.</p>
-              <p>[...Ce projet est encore en cours de réalisation...]</p>
-            </div>
-          </div>
-        </div>
-    </section>
-</section> -->
 
-<!-- PROJETS 42 -->
-<!-- <h2 class="fade-in">🏫 Projets réalisés à l'École <a href="https://42.fr/" target="_blank" rel="noopener noreferrer"><img src="assets/images/icons/42w.png" alt="Logo 42" class="quarantedeux-logo"></a> :</h2>
-<section class="home">
-  <section id="project-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+<!-- CV -->
+<section class="cv">
+  <div class="cv-container">
+      <h1about class="h1about fade-in">📄 Mon CV :</h1about>
+      <a href="assets/files/CV_AnneGaelleBonnefoy.pdf" download class="fade-in btn-download">📥 Télécharger mon CV</a>
+  </div>
+</section>
 
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="d-flex flex-column align-items-center">
-          <h3>Ft_transcendence</h3>
-          <p>Projet final de réalisation d'un jeu pong et intégration de fonctionnalités avancées</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="d-flex flex-column align-items-center">
-          <h3>Inception</h3>
-          <p>Configuration et orchestration de conteneurs Docker pour une infrastructure de développement en réseau</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="d-flex flex-column align-items-center">
-          <h3>Ft_irc</h3>
-          <p>Implémentation d'un serveur IRC en C++ permettant une communication en réseau et une gestion de clients multiples</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="d-flex flex-column align-items-center">
-          <h3>Piscine C++</h3>
-          <p>Introduction à la programmation orientée objet avec C++, couvrant ses bases et fonctionnalités avancées</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="d-flex flex-column align-items-center">
-          <h3>Cub3D</h3>
-          <p>Jeu en 3D inspiré de Wolfenstein, utilisant des techniques de raycasting pour afficher un monde immersif</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="d-flex flex-column align-items-center">
-          <h3>NetPractice</h3>
-          <p>Projet d'initiation sur les concepts fondamentaux des systèmes réseaux</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="d-flex flex-column align-items-center">
-          <h3>Minishell</h3>
-          <p>Création d'un shell en C (gestion des commandes, pipes, redirections, ...)</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="d-flex flex-column align-items-center">
-          <h3>Philosophers</h3>
-          <p>Simulation du problème des philosophes mangeurs, explorant la programmation concurrente et la gestion des threads</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="d-flex flex-column align-items-center">
-          <h3>Pipex</h3>
-          <p>Implémentation d'une version simplifiée de pipelines Unix, afin de maitriser la gestion des processus et des redirections en C</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="d-flex flex-column align-items-center">
-          <h3>Push_swap</h3>
-          <p>Algorithmes de tri en C, avec optimisation pour trier une pile avec un minimum de mouvements</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="d-flex flex-column align-items-center">
-          <h3>So_long</h3>
-          <p>Jeu 2D simple en C, combinant gestion d'événements, logique de jeu, et affichage graphique avec la bibliothèque MiniLibX</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="d-flex flex-column align-items-center">
-          <h3>Born2beroot</h3>
-          <p>Projet d'administration système, avec installation et configuration d'une machine virtuelle sécurisée</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="d-flex flex-column align-items-center">
-          <h3>Get_next_line</h3>
-          <p>Création d'une fonction pour lire une ligne d'un fichier à la fois, un défi pour comprendre la gestion des buffers en C</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="d-flex flex-column align-items-center">
-          <h3>Ft_printf</h3>
-          <p>Réalisation d'une version personnelle de la fonction printf, mettant en avant la gestion des formats et la manipulation avancée de chaînes en C</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="d-flex flex-column align-items-center">
-          <h3>Libft</h3>
-          <p>Développement d'une bibliothèque standard en C, recréant des fonctions de base pour renforcer la compréhension des mécanismes du langage</p>
-        </div>
-      </div>
-    </div>
-
-    <button class="carousel-control-prev" type="button" data-bs-target="#project-carousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#project-carousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-
-</section> -->
-  
