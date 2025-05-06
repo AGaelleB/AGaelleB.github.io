@@ -53,7 +53,7 @@ export function initTypewriter() {
     }
 
     const titleText = "Bienvenue!";
-    const subtitleText = "Reconvertie et ayant terminé le cursus de l'École 42 Paris.\n\nJe suis passionnée par le développement web et suis aujourd'hui à la recherche d'un stage ou d'un poste junior";
+    const subtitleText = "Reconvertie et ayant terminé le cursus de l'École 42 Paris\n\nJe suis passionnée par le développement web et suis aujourd'hui à la recherche d'un stage ou d'un poste junior";
 
     let titleIndex = 0;
     let subtitleIndex = 0;
