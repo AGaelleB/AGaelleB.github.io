@@ -170,3 +170,100 @@ footer {
     text-align: center;
 }
 
+/* MODE JOUR NUIT */
+/* Application des thèmes aux éléments spécifiques */
+.navbar {
+    background-color: var(--card-bg);
+    box-shadow: 0 2px 5px var(--shadow-color);
+    transition: background-color var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--text-color);
+    transition: color var(--transition-speed) ease;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: var(--navbar-toggler-icon);
+    transition: background-image var(--transition-speed) ease;
+}
+
+/* Adaptation des cartes de projets */
+.project-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 6px var(--shadow-color);
+    transition: background-color var(--transition-speed) ease, 
+                border var(--transition-speed) ease,
+                box-shadow var(--transition-speed) ease;
+}
+
+.project-card:hover {
+    box-shadow: 0 10px 15px var(--shadow-color);
+}
+
+.project-card h3, .project-card p {
+    color: var(--text-color);
+    transition: color var(--transition-speed) ease;
+}
+
+/* Adaptation des images en mode sombre */
+[data-theme="dark"] img {
+    filter: brightness(0.9);
+    transition: filter var(--transition-speed) ease;
+}
+
+[data-theme="dark"] .hex-image-wrapper img {
+    filter: brightness(1.1); /* Plus lumineux pour la photo de profil */
+}
+
+/* Transitions animées avec AOS */
+[data-aos] {
+    transition-timing-function: ease-out;
+}
+
+/* Amélioration de l'animation avec AOS */
+[data-theme="dark"] [data-aos="fade-up"],
+[data-theme="dark"] [data-aos="fade-down"],
+[data-theme="dark"] [data-aos="fade-left"],
+[data-theme="dark"] [data-aos="fade-right"] {
+    transition-property: transform, opacity, background-color, color;
+}
+
+/* Adaptation pour les éléments du carousel */
+.carousel-item {
+    transition: background-color var(--transition-speed) ease;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: var(--carousel-control-filter);
+    transition: filter var(--transition-speed) ease;
+}
+
+/* Variables supplémentaires pour le thème */
+:root {
+    --navbar-toggler-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    --carousel-control-filter: invert(0);
+}
+
+[data-theme="dark"] {
+    --navbar-toggler-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.7%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    --carousel-control-filter: invert(1);
+}
+
+/* Classes d'animation pour les éléments avec AOS */
+.dark-mode {
+    transition: background-color 0.8s ease, color 0.8s ease, border-color 0.8s ease;
+}
+
+/* Animation de transition de thème - effet de pulsation */
+@keyframes theme-pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.85; }
+    100% { opacity: 1; }
+}
+
+.theme-transition-effect {
+    animation: theme-pulse 0.8s ease-in-out;
+}

@@ -1,5 +1,12 @@
 /* assets/css/projects.css */
 
+/* 42 LOGO */
+.quarantedeux-logo {
+  width: 100px;
+  height: auto;
+  margin: 15px 0;
+}
+
 .projects-header {
     text-align: center;
     padding: 4rem 2rem;

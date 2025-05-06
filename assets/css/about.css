@@ -18,3 +18,105 @@
     text-align: center; 
     margin-top: 10px;
 }
+
+/* POLICES */
+.h1about {
+    padding: 0;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-family: 'Fira_Code', sans-serif;
+    font-size: 2rem;
+}
+
+/* CASE A PROPOS DE MOI */
+.qualities-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.quality-card-about {
+    display: flex;
+    flex-direction: row; /* Place l'image et le contenu côte à côte */
+    gap: 2rem;
+    align-items: center;
+    width: 100%;
+}
+
+.quality-card-image {
+    flex: 1; /* L'image occupe la partie gauche */
+    max-height: 100%; /* Assure que l'image s'adapte à la hauteur */
+}
+
+.profile-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.quality-card-full {
+    flex: 2;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.quality-card-content {
+    flex: 2; /* Le contenu occupe le reste de la largeur */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Ajoute de l'espace entre les paragraphes */
+}
+
+/* CASES COMPETENCES */
+.qualities-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.quality-card {
+    background-color: #202020;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quality-card h2 {
+    color: white; /* Uniformiser la couleur des titres */
+    /* margin-bottom: 15px; */
+}
+
+.quality-card p {
+    color: #ccc;
+    margin: 5px 0;
+}
+
+.quality-card a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.quality-card a:hover {
+    color: #ffffff; /* Lien survolé */
+}
+
+@media (max-width: 768px) {
+    .qualities-section {
+        grid-template-columns: 1fr;
+    }
+}

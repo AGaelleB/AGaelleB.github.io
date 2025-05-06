@@ -1,5 +1,8 @@
 // assets/js/home.js
 
+import { applyThemeToLoadedPage } from "./theme.js";
+
+
 export function initializeApp(contentElement) {
     loadPage('home', contentElement);
 }
@@ -26,6 +29,7 @@ function loadPage(page, contentElement) {
                 if (welcomeTitle) {
                     initTypewriter();
                 }
+                applyThemeToLoadedPage();
             }, 100);
         })
         .catch(err => console.error('Error loading page:', err));
@@ -35,9 +39,10 @@ function loadPage(page, contentElement) {
 export function initTypewriter() {
     const welcomeTitle = document.getElementById('welcome-title');
     const welcomeSubtitle = document.getElementById('welcome-subtitle');
+    const welcomeImage = document.querySelector('.hex-container');
 
-    if (!welcomeTitle || !welcomeSubtitle) {
-        console.error("Les éléments 'welcome-title' et 'welcome-subtitle' sont introuvables.");
+    if (!welcomeTitle || !welcomeSubtitle || !welcomeImage) {
+        console.error("Les éléments 'welcome-title', 'welcome-subtitle' ou l'image sont introuvables.");
         return;
     }
 
@@ -45,34 +50,42 @@ export function initTypewriter() {
     const subtitleText = "Découvrez mes projets réalisés lors de ma formation à l'École 42 et plus encore !";
     let titleIndex = 0;
     let subtitleIndex = 0;
-    
+
     // Vider les éléments au cas où
     welcomeTitle.textContent = '';
     welcomeSubtitle.textContent = '';
     
+    // Cacher l'image hexagonale au démarrage
+    // welcomeImage.style.opacity = '0';
+    // welcomeImage.style.transition = 'opacity 1s ease-in-out';
+
     // Effet de frappe pour le titre
     function typeWriterTitle() {
         if (titleIndex < titleText.length) {
             welcomeTitle.textContent += titleText.charAt(titleIndex);
             titleIndex++;
             setTimeout(typeWriterTitle, 70); // Vitesse
-        }
-        else {
+        } else {
             setTimeout(typeWriterSubtitle, 500);
         }
     }
-    
+
     // Effet de frappe pour le sous-titre
     function typeWriterSubtitle() {
         if (subtitleIndex < subtitleText.length) {
             welcomeSubtitle.textContent += subtitleText.charAt(subtitleIndex);
             subtitleIndex++;
             setTimeout(typeWriterSubtitle, 35); // Vitesse
+        } else {
+            // Afficher l'image après l'animation du sous-titre
+            setTimeout(() => {
+                welcomeImage.style.opacity = '1';
+            }, 300);
         }
     }
+
     typeWriterTitle();
 }
-
 
 export function setupFadeInOnScroll() {
     const observer = new IntersectionObserver(
