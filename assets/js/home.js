@@ -53,7 +53,7 @@ export function initTypewriter() {
     }
 
     const titleText = "Bienvenue!";
-    const subtitleText = "Reconvertie et ayant terminé le cursus de l'École 42, je suis passionnée par le développement web.";
+    const subtitleText = "Reconvertie et ayant terminé le cursus de l'École 42 Paris.\n\nJe suis passionnée par le développement web et suis aujourd'hui à la recherche d'un stage ou d'un poste junior";
 
     let titleIndex = 0;
     let subtitleIndex = 0;
@@ -76,9 +76,14 @@ export function initTypewriter() {
     // Effet de frappe pour le sous-titre
     function typeWriterSubtitle() {
         if (subtitleIndex < subtitleText.length) {
-            welcomeSubtitle.textContent += subtitleText.charAt(subtitleIndex);
+            // Si le caractère est un saut de ligne, le remplacer par <br>
+            if (subtitleText.charAt(subtitleIndex) === '\n') {
+                welcomeSubtitle.innerHTML += '<br>';
+            } else {
+                welcomeSubtitle.innerHTML += subtitleText.charAt(subtitleIndex);
+            }
             subtitleIndex++;
-            setTimeout(typeWriterSubtitle, 30); // Vitesse
+            setTimeout(typeWriterSubtitle,25); // Vitesse
         }
     }
     typeWriterTitle();
