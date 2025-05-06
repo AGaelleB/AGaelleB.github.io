@@ -3,11 +3,10 @@
 // Fonction pour initialiser le système de thème
 export function initThemeSystem() {
     // Vérifier si AOS est chargé, sinon le charger
-    if (typeof AOS === 'undefined') {
+    if (typeof AOS === 'undefined')
         loadAOS();
-    } else {
+    else
         setupThemeToggle();
-    }
 }
 
 // Fonction pour charger dynamiquement AOS (si nécessaire)
