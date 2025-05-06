@@ -67,8 +67,6 @@
 
 
 /* ACCEUIL SCROLL */
-
-/* Style pour la section hero plein écran */
 .hero-section {
     height: 100vh; /* Prend toute la hauteur de l'écran */
     display: flex;

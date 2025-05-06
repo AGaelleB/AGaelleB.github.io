@@ -10,8 +10,6 @@ export function initProjects() {
         mirror: false
       });
     }
-    
-    // Autres initialisations spécifiques aux projets si nécessaire
   }
   
   export function loadProjectPage(contentElement) {
@@ -20,8 +18,6 @@ export function initProjects() {
       .then(response => response.text())
       .then(html => {
         contentElement.innerHTML = html;
-        
-        // Initialise les animations et fonctionnalités de la page projets
         initProjects();
       })
       .catch(err => console.error('Error loading projects page:', err));
