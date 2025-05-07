@@ -2,7 +2,6 @@
 
 import { applyThemeToLoadedPage } from "./theme.js";
 
-
 export function initializeApp(contentElement) {
     loadPage('home', contentElement);
 }
@@ -47,7 +46,7 @@ export function initTypewriter() {
     const welcomeSubtitle = document.getElementById('welcome-subtitle');
     const welcomeImage = document.querySelector('.hex-container');
 
-    if (!welcomeTitle || !welcomeSubtitle) { // || !welcomeImage) {
+    if (!welcomeTitle || !welcomeSubtitle) {
         console.error("Les éléments 'welcome-title', 'welcome-subtitle' ou l'image sont introuvables.");
         return;
     }
@@ -77,11 +76,10 @@ export function initTypewriter() {
     function typeWriterSubtitle() {
         if (subtitleIndex < subtitleText.length) {
             // Si le caractère est un saut de ligne, le remplacer par <br>
-            if (subtitleText.charAt(subtitleIndex) === '\n') {
+            if (subtitleText.charAt(subtitleIndex) === '\n')
                 welcomeSubtitle.innerHTML += '<br>';
-            } else {
+            else
                 welcomeSubtitle.innerHTML += subtitleText.charAt(subtitleIndex);
-            }
             subtitleIndex++;
             setTimeout(typeWriterSubtitle,25); // Vitesse
         }

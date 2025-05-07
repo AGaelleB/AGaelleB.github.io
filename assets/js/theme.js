@@ -2,7 +2,6 @@
 
 // Fonction pour initialiser le système de thème
 export function initThemeSystem() {
-    // Vérifier si AOS est chargé, sinon le charger
     if (typeof AOS === 'undefined')
         loadAOS();
     else
@@ -83,7 +82,6 @@ function removeDarkClassFromElements() {
 // Animer le changement de thème
 function animateThemeChange() {
     if (typeof AOS !== 'undefined') {
-        // Actualiser les animations AOS
         setTimeout(() => {
             AOS.refresh();
         }, 100);

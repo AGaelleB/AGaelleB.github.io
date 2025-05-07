@@ -14,5 +14,4 @@ function main() {
     initializeApp(content);
     setupNavigation(links, content);
     loadProjectPage(content);
-
 }
