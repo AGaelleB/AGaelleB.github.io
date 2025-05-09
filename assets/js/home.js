@@ -1,6 +1,6 @@
 // assets/js/home.js
 
-import { applyThemeToLoadedPage } from "./theme.js";
+// import { applyThemeToLoadedPage } from "./theme.js";
 
 export function initializeApp(contentElement) {
     loadPage('home', contentElement);
@@ -34,7 +34,7 @@ function loadPage(page, contentElement) {
                     initParticlesBackground();
                 }
 
-                applyThemeToLoadedPage();
+                // applyThemeToLoadedPage();
             }, 100);
         })
         .catch(err => console.error('Error loading page:', err));
