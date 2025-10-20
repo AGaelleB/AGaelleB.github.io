@@ -1,6 +1,6 @@
 // assets/js/home.js
 
-// import { applyThemeToLoadedPage } from "./theme.js";
+import { getTranslation, applyTranslations } from './switchLanguage.js';
 
 export function initializeApp(contentElement) {
     loadPage('home', contentElement);
@@ -24,6 +24,10 @@ function loadPage(page, contentElement) {
             
             setTimeout(() => {
                 setupFadeInOnScroll();
+                
+                // Appliquer les traductions aux éléments avec data-i18n
+                applyTranslations();
+                
                 const welcomeTitle = document.getElementById('welcome-title');
                 if (welcomeTitle) {
                     initTypewriter();
@@ -33,55 +37,48 @@ function loadPage(page, contentElement) {
                 if (heroSection && typeof particlesJS !== 'undefined') {
                     initParticlesBackground();
                 }
-
-                // applyThemeToLoadedPage();
             }, 100);
         })
         .catch(err => console.error('Error loading page:', err));
 }
 
-
 export function initTypewriter() {
     const welcomeTitle = document.getElementById('welcome-title');
     const welcomeSubtitle = document.getElementById('welcome-subtitle');
-    const welcomeImage = document.querySelector('.hex-container');
 
     if (!welcomeTitle || !welcomeSubtitle) {
-        console.error("Les éléments 'welcome-title', 'welcome-subtitle' ou l'image sont introuvables.");
+        console.error("Les éléments 'welcome-title' ou 'welcome-subtitle' sont introuvables.");
         return;
     }
 
-    const titleText = "Bienvenue!";
-    const subtitleText = "Reconvertie et ayant terminé le cursus de l'École 42 Paris\n\nJe suis passionnée par le développement web et suis aujourd'hui à la recherche d'un stage ou d'un poste junior";
+    // Récupérer les traductions
+    const titleText = getTranslation('home.hero_title');
+    const subtitleText = getTranslation('home.hero_subtitle');
 
     let titleIndex = 0;
     let subtitleIndex = 0;
 
-    // Vider les éléments au cas où
     welcomeTitle.textContent = '';
     welcomeSubtitle.textContent = '';
     
-    // Effet de frappe pour le titre
     function typeWriterTitle() {
         if (titleIndex < titleText.length) {
             welcomeTitle.textContent += titleText.charAt(titleIndex);
             titleIndex++;
-            setTimeout(typeWriterTitle, 70); // Vitesse
+            setTimeout(typeWriterTitle, 70);
         }
         else
             setTimeout(typeWriterSubtitle, 500);
     }
 
-    // Effet de frappe pour le sous-titre
     function typeWriterSubtitle() {
         if (subtitleIndex < subtitleText.length) {
-            // Si le caractère est un saut de ligne, le remplacer par <br>
             if (subtitleText.charAt(subtitleIndex) === '\n')
                 welcomeSubtitle.innerHTML += '<br>';
             else
                 welcomeSubtitle.innerHTML += subtitleText.charAt(subtitleIndex);
             subtitleIndex++;
-            setTimeout(typeWriterSubtitle,25); // Vitesse
+            setTimeout(typeWriterSubtitle, 25);
         }
     }
     typeWriterTitle();
@@ -92,21 +89,19 @@ export function setupFadeInOnScroll() {
         (entries, observer) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('visible'); // Ajoute la classe pour l'effet
-                    observer.unobserve(entry.target); // Stoppe l'observation après l'animation
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
                 }
             });
         },
         {
-            threshold: 0.1, // Déclenche lorsque 10% de l'élément sont visibles
+            threshold: 0.1,
         }
     );
 
-    // Ciblez tous les éléments avec la classe fade-in
     const elements = document.querySelectorAll('.fade-in');
     elements.forEach(element => observer.observe(element));
 }
-
 
 function initParticlesBackground() {
     particlesJS('particles-js', {

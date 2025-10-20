@@ -1,30 +1,55 @@
-<!-- templates/project.html -->
+<!-- templates/projects.html -->
 
 <section class="projects-header">
-    <h1 data-aos="fade-down">Mes Projets</h1>
-    <p data-aos="fade-up" data-aos-delay="300">Voici une sélection de projets réalisés durant ma formation à l'École 42 ainsi que dans le cadre de projets personnels</p>
+    <h1 data-aos="fade-down" data-i18n="projects.title">Mes Projets</h1>
+    <p data-aos="fade-up" data-aos-delay="300" data-i18n="projects.subtitle">Voici une sélection de projets réalisés durant ma formation à l'École 42 ainsi que dans le cadre de projets personnels</p>
 </section>
 
 <div class="projects-container">
-
-    <h2 class="fade-in">Projets personnels :</h2>
-
+    
+    <h2 class="fade-in" data-i18n="projects.professional_title">Experiences professionnelles :</h2>
+    
+    <!-- Japan Awaits -->
+    <div class="project-card" data-aos="fade-up">
+        <div class="project-image">
+            <img src="assets/images/projects/japanawaits.png" alt="Japan Awaits">
+        </div>
+        <div class="project-info">
+            <h1 class="h1project" data-i18n="projects.japan_title">Stage Full Stack - Japan Awaits</h1>
+            <p data-i18n="projects.japan_desc">Refonte complète du portail interne de l'entreprise pour améliorer la gestion et l'expérience utilisateur.</p>
+            <p data-i18n="projects.japan_period">Stage en cours depuis juin 2024</p>
+            <p data-i18n="projects.japan_tech">Développement full stack avec React et Tailwind pour le front-end, Laravel Inertia pour le back-end.</p>
+            <div class="tech-stack">
+                <span>React</span>
+                <span>Tailwind CSS</span>
+                <span>Laravel</span>
+                <span>Inertia.js</span>
+                <span>PHP</span>
+            </div>
+            <div class="github-link">
+                <a href="https://japan-awaits.com" target="_blank" aria-label="Site Japan Awaits">
+                    <i class="bi bi-globe"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <h2 class="fade-in" data-i18n="projects.personal_title">Projets personnels :</h2>
+    
     <!-- TimeQuest -->
     <div class="project-card" data-aos="fade-up">
         <div class="project-image">
-            <!-- <img src="assets/images/projects/timequest.png" alt="TimeQuest"> -->
             <img src="assets/images/projects/TimeQuest.gif" alt="TimeQuest">
         </div>
         <div class="project-info">
-            <h1project class="h1project">TimeQuest</h1project>
-            <p>TimeQuest est un jeu mobile où les joueurs doivent deviner le plus rapidement possible la date d'événements marquants. Jouable en solo ou en multijoueur.</p>
-            <p>Projet réalisé à 2</p>
-            <p>🚧 Ce projet est encore en cours de réalisation 🚧</p>
+            <h1project class="h1project" data-i18n="projects.timequest_title">TimeQuest</h1project>
+            <p data-i18n="projects.timequest_desc">TimeQuest est un jeu mobile où les joueurs doivent deviner le plus rapidement possible la date d'événements marquants. Jouable en solo ou en multijoueur.</p>
+            <p data-i18n="projects.timequest_team">Projet réalisé à 2</p>
+            <p data-i18n="projects.timequest_wip">🚧 Ce projet est encore en cours de réalisation 🚧</p>
             <div class="tech-stack">
                 <span>TypeScript</span>
                 <span>Javascript</span>
                 <span>React Native</span>
-                <!-- <span>Firebase</span> -->
             </div>
             <div class="github-link">
                 <a href="https://github.com/AGaelleB/MobileApp" target="_blank">
@@ -37,11 +62,11 @@
     <!-- Mon portfolio -->
     <div class="project-card" data-aos="fade-up">
         <div class="project-image">
-            <img src="assets/images/projects/portfolio.gif" alt="Ft_transcendence">
+            <img src="assets/images/projects/portfolio.gif" alt="Portfolio">
         </div>
         <div class="project-info">
-            <h1project class="h1project">Mon portfolio</h1project>
-            <p>Réalisation et conception du front-end de ce site afin de présenter mes projets</p>
+            <h1project class="h1project" data-i18n="projects.portfolio_title">Mon portfolio</h1project>
+            <p data-i18n="projects.portfolio_desc">Réalisation et conception du front-end de ce site afin de présenter mes projets</p>
             <div class="tech-stack">
                 <span>Javascript</span>
                 <span>CSS</span>
@@ -55,8 +80,7 @@
         </div>
     </div>
 
-
-    <h2 class="fade-in">Projets réalisés à l'École <a href="https://42.fr/" target="_blank" rel="noopener noreferrer"><img src="assets/images/icons/42w.png" alt="Logo 42" class="quarantedeux-logo"></a> :</h2>
+    <h2 class="fade-in" data-i18n="projects.school_title">Projets réalisés à l'École <a href="https://42.fr/" target="_blank" rel="noopener noreferrer"><img src="assets/images/icons/42w.png" alt="Logo 42" class="quarantedeux-logo"></a> :</h2>
 
     <!-- Ft_transcendence -->
     <div class="project-card" data-aos="fade-up">
@@ -64,9 +88,9 @@
             <img src="assets/images/projects/ft_transcendence2.gif" alt="Ft_transcendence">
         </div>
         <div class="project-info">
-            <h1project class="h1project">Ft_transcendence</h1project>
-            <p>Projet final de l'ecole 42 visant à réaliser un jeu pong et intégrer des fonctionnalités avancées</p>
-            <p>Projet de groupe réalisé à 4</p>
+            <h1project class="h1project" data-i18n="projects.transcendence_title">Ft_transcendence</h1project>
+            <p data-i18n="projects.transcendence_desc">Projet final de l'ecole 42 visant à réaliser un jeu pong et intégrer des fonctionnalités avancées</p>
+            <p data-i18n="projects.transcendence_team">Projet de groupe réalisé à 4</p>
             <div class="tech-stack">
                 <span>Javascript</span>
                 <span>CSS</span>
@@ -91,8 +115,8 @@
             <img src="assets/images/projects/Inception.webp" alt="Inception">
         </div>
         <div class="project-info">
-            <h1project class="h1project">Inception</h1project>
-            <p>Configuration et orchestration de conteneurs Docker pour une infrastructure de développement en réseau</p>
+            <h1project class="h1project" data-i18n="projects.inception_title">Inception</h1project>
+            <p data-i18n="projects.inception_desc">Configuration et orchestration de conteneurs Docker pour une infrastructure de développement en réseau</p>
             <div class="tech-stack">
                 <span>Dockerfile</span>
                 <span>MySQL</span>
@@ -115,9 +139,9 @@
             <img src="assets/images/projects/Ft_irc.png" alt="Ft_irc">
         </div>
         <div class="project-info">
-            <h1project class="h1project">Ft_irc</h1project>
-            <p>Implémentation d'un serveur IRC en C++ permettant une communication en réseau et une gestion de clients multiples</p>
-            <p>Projet de groupe réalisé à 2</p>
+            <h1project class="h1project" data-i18n="projects.irc_title">Ft_irc</h1project>
+            <p data-i18n="projects.irc_desc">Implémentation d'un serveur IRC en C++ permettant une communication en réseau et une gestion de clients multiples</p>
+            <p data-i18n="projects.irc_team">Projet de groupe réalisé à 2</p>
             <div class="tech-stack">
                 <span>C++</span>
                 <span>Makefile</span>
@@ -136,8 +160,8 @@
             <img src="assets/images/projects/cpp.png" alt="Piscine">
         </div>
         <div class="project-info">
-            <h1project class="h1project">Piscine C++</h1project>
-            <p>Introduction à la programmation orientée objet avec C++, couvrant ses bases et fonctionnalités avancées</p>
+            <h1project class="h1project" data-i18n="projects.cpp_title">Piscine C++</h1project>
+            <p data-i18n="projects.cpp_desc">Introduction à la programmation orientée objet avec C++, couvrant ses bases et fonctionnalités avancées</p>
             <div class="tech-stack">
                 <span>C++</span>
                 <span>Makefile</span>
@@ -156,9 +180,9 @@
             <img src="assets/images/projects/Cub3D.gif" alt="Cub3D">
         </div>
         <div class="project-info">
-            <h1project class="h1project">Cub3D</h1project>
-            <p>Jeu en 3D inspiré de Wolfenstein, utilisant des techniques de raycasting pour afficher un monde immersif</p>
-            <p>Projet de groupe réalisé à 2</p>
+            <h1project class="h1project" data-i18n="projects.cub3d_title">Cub3D</h1project>
+            <p data-i18n="projects.cub3d_desc">Jeu en 3D inspiré de Wolfenstein, utilisant des techniques de raycasting pour afficher un monde immersif</p>
+            <p data-i18n="projects.cub3d_team">Projet de groupe réalisé à 2</p>
             <div class="tech-stack">
                 <span>C</span>
                 <span>Makefile</span>
@@ -178,8 +202,8 @@
             <img src="assets/images/projects/NetPractice.png" alt="NetPractice">
         </div>
         <div class="project-info">
-            <h1project class="h1project">NetPractice</h1project>
-            <p>Projet d'initiation sur les concepts fondamentaux des systèmes réseaux</p>
+            <h1project class="h1project" data-i18n="projects.netpractice_title">NetPractice</h1project>
+            <p data-i18n="projects.netpractice_desc">Projet d'initiation sur les concepts fondamentaux des systèmes réseaux</p>
             <div class="tech-stack">
                 <span>TCP/IP</span>
                 <span>Architecture réseau</span>
@@ -199,9 +223,9 @@
             <img src="assets/images/projects/minishell.png" alt="Minishell">
         </div>
         <div class="project-info">
-            <h1project class="h1project">Minishell</h1project>
-            <p>Création d'un shell en C (gestion des commandes, pipes, redirections, ...)</p>
-            <p>Projet de groupe réalisé à 2</p>
+            <h1project class="h1project" data-i18n="projects.minishell_title">Minishell</h1project>
+            <p data-i18n="projects.minishell_desc">Création d'un shell en C (gestion des commandes, pipes, redirections, ...)</p>
+            <p data-i18n="projects.minishell_team">Projet de groupe réalisé à 2</p>
             <div class="tech-stack">
                 <span>C</span>
                 <span>Makefile</span>
@@ -221,8 +245,8 @@
             <img src="assets/images/projects/Philosophers.png" alt="Philosophers">
         </div>
         <div class="project-info">
-            <h1project class="h1project">Philosophers</h1project>
-            <p>Simulation du problème des philosophes mangeurs, explorant la programmation concurrente et la gestion des threads</p>
+            <h1project class="h1project" data-i18n="projects.philosophers_title">Philosophers</h1project>
+            <p data-i18n="projects.philosophers_desc">Simulation du problème des philosophes mangeurs, explorant la programmation concurrente et la gestion des threads</p>
             <div class="tech-stack">
                 <span>C</span>
                 <span>Makefile</span>
@@ -241,8 +265,8 @@
             <img src="assets/images/projects/Pipex.png" alt="Pipex">
         </div>
         <div class="project-info">
-            <h1project class="h1project">Pipex</h1project>
-            <p>Projet qui consiste à recréer une version simplifiée de la commande Unix pipe, permettant la communication entre processus via des tubes en C</p>
+            <h1project class="h1project" data-i18n="projects.pipex_title">Pipex</h1project>
+            <p data-i18n="projects.pipex_desc">Projet qui consiste à recréer une version simplifiée de la commande Unix pipe, permettant la communication entre processus via des tubes en C</p>
             <div class="tech-stack">
                 <span>C</span>
                 <span>Makefile</span>
@@ -258,11 +282,11 @@
     <!-- Push_swap -->
     <div class="project-card" data-aos="fade-up">
         <div class="project-image">
-            <img src="assets/images/projects/push_swap.gif" alt="Philosophers">
+            <img src="assets/images/projects/push_swap.gif" alt="Push_swap">
         </div>
         <div class="project-info">
-            <h1project class="h1project">Push_swap</h1project>
-            <p>Algorithmes de tri en C, avec optimisation pour trier une pile avec un minimum de mouvements</p>
+            <h1project class="h1project" data-i18n="projects.push_swap_title">Push_swap</h1project>
+            <p data-i18n="projects.push_swap_desc">Algorithmes de tri en C, avec optimisation pour trier une pile avec un minimum de mouvements</p>
             <div class="tech-stack">
                 <span>C</span>
                 <span>Makefile</span>
@@ -281,8 +305,8 @@
             <img src="assets/images/projects/so_long.gif" alt="So_long">
         </div>
         <div class="project-info">
-            <h1project class="h1project">So_long</h1project>
-            <p>Jeu 2D simple en C, combinant gestion d'événements, logique de jeu, et affichage graphique avec la bibliothèque MiniLibX</p>
+            <h1project class="h1project" data-i18n="projects.so_long_title">So_long</h1project>
+            <p data-i18n="projects.so_long_desc">Jeu 2D simple en C, combinant gestion d'événements, logique de jeu, et affichage graphique avec la bibliothèque MiniLibX</p>
             <div class="tech-stack">
                 <span>C</span>
                 <span>Makefile</span>
@@ -301,8 +325,8 @@
             <img src="assets/images/projects/Born2beroot.png" alt="Born2beroot">
         </div>
         <div class="project-info">
-            <h1project class="h1project">Born2beroot</h1project>
-            <p>Projet d'administration système, avec installation et configuration d'une machine virtuelle sécurisée</p>
+            <h1project class="h1project" data-i18n="projects.born2beroot_title">Born2beroot</h1project>
+            <p data-i18n="projects.born2beroot_desc">Projet d'administration système, avec installation et configuration d'une machine virtuelle sécurisée</p>
             <div class="tech-stack">
                 <span>Debian</span>
                 <span>Bash</span>
@@ -322,8 +346,8 @@
             <img src="assets/images/projects/gnl.png" alt="Get_next_line">
         </div>
         <div class="project-info">
-            <h1project class="h1project">Get_next_line</h1project>
-            <p>Création d'une fonction pour lire une ligne d'un fichier à la fois, un défi pour comprendre la gestion des buffers en C</p>
+            <h1project class="h1project" data-i18n="projects.gnl_title">Get_next_line</h1project>
+            <p data-i18n="projects.gnl_desc">Création d'une fonction pour lire une ligne d'un fichier à la fois, un défi pour comprendre la gestion des buffers en C</p>
             <div class="tech-stack">
                 <span>C</span>
             </div>
@@ -341,8 +365,8 @@
             <img src="assets/images/projects/Ft_printf.png" alt="Ft_printf">
         </div>
         <div class="project-info">
-            <h1project class="h1project">Ft_printf</h1project>
-            <p>Réalisation d'une version personnelle de la fonction printf, mettant en avant la gestion des formats et la manipulation avancée de chaînes en C</p>
+            <h1project class="h1project" data-i18n="projects.printf_title">Ft_printf</h1project>
+            <p data-i18n="projects.printf_desc">Réalisation d'une version personnelle de la fonction printf, mettant en avant la gestion des formats et la manipulation avancée de chaînes en C</p>
             <div class="tech-stack">
                 <span>C</span>
                 <span>Makefile</span>
@@ -361,8 +385,8 @@
             <img src="assets/images/projects/Libft.jpg" alt="Libft">
         </div>
         <div class="project-info">
-            <h1project class="h1project">Libft</h1project>
-            <p>Développement d'une bibliothèque standard en C, recréant des fonctions de base pour renforcer la compréhension des mécanismes du langage</p>
+            <h1project class="h1project" data-i18n="projects.libft_title">Libft</h1project>
+            <p data-i18n="projects.libft_desc">Développement d'une bibliothèque standard en C, recréant des fonctions de base pour renforcer la compréhension des mécanismes du langage</p>
             <div class="tech-stack">
                 <span>C</span>
                 <span>Makefile</span>
