@@ -17,15 +17,23 @@ export function setupNavigation(navigationLinks, contentElement) {
 }
 
 function loadPage(page, contentElement) {
+
+    if (!page || page === '')
+        page = 'home';    
+    page = page.replace('#', '');
+    
     fetch(`templates/${page}.html`)
-        .then(response => response.text())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.text();
+        })
         .then(html => {
             contentElement.innerHTML = html;
             
             setTimeout(() => {
                 setupFadeInOnScroll();
-                
-                // Appliquer les traductions aux éléments avec data-i18n
                 applyTranslations();
                 
                 const welcomeTitle = document.getElementById('welcome-title');
