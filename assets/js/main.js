@@ -24,7 +24,8 @@ async function main() {
 function setupLanguageToggle() {
     const langButton = document.getElementById('language-toggle');
     if (langButton) {
-        langButton.addEventListener('click', async () => {
+        langButton.addEventListener('click', async (e) => {
+            e.preventDefault();
             const currentLang = getCurrentLanguage();
             const newLang = currentLang === 'fr' ? 'en' : 'fr';
             await setLanguage(newLang);
