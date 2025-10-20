@@ -30,7 +30,8 @@ function loadPage(page, contentElement) {
             return response.text();
         })
         .then(html => {
-            contentElement.innerHTML = html;
+            const cleanHtml = html.replace(/<meta[^>]*content-security-policy[^>]*>/gi, '');
+            contentElement.innerHTML = cleanHtml;
             
             setTimeout(() => {
                 setupFadeInOnScroll();
