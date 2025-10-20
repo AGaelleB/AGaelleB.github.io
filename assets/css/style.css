@@ -286,6 +286,7 @@ footer {
     transition: all 0.3s ease;
     text-decoration: none;
     display: inline-block;
+    outline: none; /* ← AJOUTE ÇA */
 }
 
 .language-toggle:hover {
@@ -295,6 +296,11 @@ footer {
     box-shadow: 0 5px 15px rgba(0, 212, 255, 0.4);
 }
 
-.navigation li {
-    display: inline-block;
+.language-toggle:focus {
+    outline: none; /* ← ET ÇA AUSSI */
+    box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.3); /* Optionnel : ajoute un effet focus personnalisé */
+}
+
+.language-toggle:active {
+    transform: translateY(0);
 }
