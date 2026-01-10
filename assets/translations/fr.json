@@ -5,22 +5,36 @@
     "parcours": "MON PARCOURS",
     "contact": "CONTACT"
   },
-  "home": {
-    "hero_title": "Bienvenue!",
-    "hero_subtitle": "Reconvertie et ayant terminé le cursus de l'École 42 Paris\n\nJe suis passionnée par le développement web et suis aujourd'hui à la recherche d'un stage ou d'un poste junior",
+
+"home": {
+    "hero_title": "Bienvenue !",
+    "hero_subtitle": "Ancienne chargée de mission en ONG, puis ayant suivi une formation à l'École 42 Paris\n\nDéveloppeuse Full-Stack, je conçois des solutions web complètes, de l'architecture Back-end aux interfaces Front-end modernes",
     "about_me": "À propos de moi :",
-    "age": "👩‍💻 32 ans",
+    "age": "👩‍💻 33 ans",
     "location": "📍 Basée à Toulouse",
-    "availability": "📅 Disponible immédiatement pour un stage ou un poste junior en développement web",
-    "intro_1": "J'ai terminé le tronc commun de l'école 42 après avoir entamé ma reconversion fin 2022.",
-    "intro_2": "🛠️ Lors de mes anciens postes, j'ai acquis de solides expériences en gestion de projets et en gestion financière.",
-    "intro_3": "💡 Mon objectif principal est de fusionner mes compétences en gestion avec mes nouvelles compétences en développement pour créer des solutions technologiques innovantes et efficaces.",
+    "availability": "📅 Disponible immédiatement pour un poste de Développeuse Full-Stack",
+    "intro_1": "Après avoir terminé le cursus de l'École 42 Paris, j'ai consolidé mes compétences chez Japan Awaits en pilotant la refonte d'une application métier complexe.",
+    "intro_2": "🛠️ Lors de mes précédents postes en ONG, j'ai acquis une solide expérience en gestion de projets et en gestion financière.",
+    "intro_3": "💡 Mon objectif est de fusionner ces compétences organisationnelles avec mon expertise technique pour créer des solutions innovantes et efficaces.",
     "intro_4": "🌍 Je suis passionnée par l'impact positif que la technologie peut avoir sur la société et je suis déterminée à contribuer à des projets qui font une réelle différence.",
-    "intro_5": "💻 Le développement web me permet de combiner ma créativité avec mon envie de résoudre des problèmes complexes. Mon objectif est de devenir développeuse full-stack et de travailler sur des projets collaboratifs et innovants.",
+    "intro_5": "Mon objectif est de mettre ma polyvalence technique et ma rigueur au service de projets collaboratifs, en concevant des applications performantes et centrées sur l'utilisateur.",
     "qualities_title": "Qualités principales",
-    "quality_1": "✔️ Minutieuse et sérieuse",
-    "quality_2": "✔️ Autonome",
-    "quality_3": "✔️ Forte capacité d'adaptation",
+    "quality_1": "✔️ Rigueur et qualité du code",
+    "quality_2": "✔️ Autonomie et proactivité",
+    "quality_3": "✔️ Capacité d’apprentissage rapide",
+    "quality_4": "✔️ Travail en équipe",
+    "quality_5": "✔️ Sens de l’organisation",
+
+    "tech_complementary_title": "Expertises complémentaires",
+    "tech_comp_1": "⚙️ APIs REST & intégration",
+    "tech_comp_2": "📊 Gestion de données métiers",
+    "tech_comp_3": "🚀 Notions de déploiement (SSH)",
+    "tech_comp_4": "🤝 Méthodes collaboratives (Git, PR)",
+
+    "networks_title": "Réseaux & Contact",
+    "network_location": "📍 Toulouse",
+    "network_email": "📧 annegaelle.bonnefoy@gmail.com",
+
     "languages_title": "Langues",
     "language_fr": "🇫🇷 Français : langue natale",
     "language_en": "🇬🇧 Anglais : bonnes notions (TOEIC 760)",
@@ -29,7 +43,6 @@
     "hobby_1": "✈️ Voyages",
     "hobby_2": "🏞️ Randonnées",
     "hobby_3": "🏃‍♀️ Course à pied",
-    "networks_title": "Réseaux",
     "tech_title": "👉 Langages & Technologies :",
     "tech_programming": "🖥️ Langages de programmation",
     "tech_frontend": "🎨 Technologies Front-end",
@@ -40,6 +53,7 @@
     "cv_title": "📄 Mon CV :",
     "cv_download": "📥 Télécharger mon CV"
   },
+
   "projects": {
     "title": "Mes Projets",
     "subtitle": "Voici une sélection de projets réalisés durant ma formation à l'École 42 ainsi que dans le cadre de projets personnels",
