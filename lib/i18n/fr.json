@@ -7,28 +7,24 @@
     "contact": "Contact",
     "cv": "CV"
   },
-
-
   "hero": {
     "label": "Développeuse Web Full-Stack",
     "name_line1": "Anne-Gaëlle",
     "name_line2": "Bonnefoy",
-    "description": "Développeuse full-stack formée à l’École 42 Paris. Je construis des applications web robustes et des interfaces soignées.",
+    "description": "Développeuse full-stack formée à l'École 42 Paris. Je construis des applications web robustes et des interfaces soignées.",
     "cta_projects": "Voir mes projets",
     "cta_contact": "Me contacter",
     "social_label": "Retrouvez-moi"
   },
-
-
   "about": {
     "section_label": "01 — À propos",
     "title": "Concevoir des solutions numériques utiles pour des projets à impact",
     "badge": "Open to work",
-    "p1": "Après plusieurs années en gestion de projets et suivi financier au sein d’ONG internationales, j’ai choisi de me reconvertir dans le développement web pour transformer ma passion pour la résolution de problèmes en métier.",
-    "p2": "Formée à l’École 42 Paris, j’y ai appris à concevoir et développer des applications en autonomie, avec une approche centrée sur la logique, l’architecture et la qualité du code.",
-    "p3": "Chez Japan Awaits, j'ai travaillé sur des outils métiers internes avec React, TypeScript et Laravel, en portant une attention particulière à l’expérience utilisateur et à la maintenabilité.",
+    "p1": "Après plusieurs années en gestion de projets et suivi financier au sein d'ONG internationales, j'ai choisi de me reconvertir dans le développement web pour transformer ma passion pour la résolution de problèmes en métier.",
+    "p2": "Formée à l'École 42 Paris, j'y ai appris à concevoir et développer des applications en autonomie, avec une approche centrée sur la logique, l'architecture et la qualité du code.",
+    "p3": "Chez Japan Awaits, j'ai travaillé sur des outils métiers internes avec React, TypeScript et Laravel, en portant une attention particulière à l'expérience utilisateur et à la maintenabilité.",
     "p4": "Mon parcours me donne une vision transversale : comprendre les besoins opérationnels, structurer des solutions efficaces et créer des interfaces réellement utiles pour les équipes qui les utilisent au quotidien.",
-    "location": "Basée à Toulouse — ouverte au remote et à l’hybride",
+    "location": "Basée à Toulouse — ouverte au remote et à l'hybride",
     "stats": {
       "school": "École 42 Paris",
       "years": "Double profil",
@@ -36,36 +32,32 @@
       "languages": "Français / Anglais"
     }
   },
-
-
-    "skills": {
-      "section_label": "02 — Compétences",
-      "title": "Ma stack",
-      "categories": {
-        "frontend": "Frontend",
-        "backend": "Backend",
-        "mobile": "Mobile",
-        "tools": "Outils",
-        "languages": "Langages",
-        "softskills": "Soft skills"
-      },
-      "levels": {
-        "1": "Découverte",
-        "2": "Apprentissage",
-        "3": "Autonome",
-        "4": "À l'aise",
-        "5": "Expert"
-      },
-      "items": {
-        "problem_solving": "Résolution de problèmes",
-        "collaboration": "Collaboration d'équipe",
-        "autonomy": "Autonomie",
-        "communication": "Communication",
-        "adaptability": "Adaptabilité"
-      }
+  "skills": {
+    "section_label": "02 — Compétences",
+    "title": "Ma stack",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "mobile": "Mobile",
+      "tools": "Outils",
+      "languages": "Langages",
+      "softskills": "Soft skills"
     },
-
-    
+    "levels": {
+      "1": "Découverte",
+      "2": "Apprentissage",
+      "3": "Autonome",
+      "4": "À l'aise",
+      "5": "Expert"
+    },
+    "items": {
+      "problem_solving": "Résolution de problèmes",
+      "collaboration": "Collaboration d'équipe",
+      "autonomy": "Autonomie",
+      "communication": "Communication",
+      "adaptability": "Adaptabilité"
+    }
+  },
   "projects": {
     "section_label": "03 — Projets",
     "title": "Des projets sur lesquels j'ai travaillé :",
@@ -100,6 +92,18 @@
           "Architecture microservices sous Docker"
         ]
       },
+      "cub3d": {
+        "title": "Cub3D",
+        "tagline": "Moteur 3D en raycasting inspiré de Wolfenstein",
+        "description": "Projet réalisé en binôme dans le cadre du cursus 42. Implémentation d'un moteur de rendu 3D en raycasting en C pur, sans bibliothèque graphique haut niveau. Affichage d'un monde immersif navigable à la première personne, gestion des textures, collisions et éclairage.",
+        "highlights": [
+          "Algorithme de raycasting from scratch en C",
+          "Rendu 3D temps réel à la première personne",
+          "Gestion des textures, sprites et éclairage",
+          "Détection de collisions",
+          "Parsing de fichiers de configuration de map"
+        ]
+      },
       "timequest": {
         "title": "TimeQuest",
         "tagline": "Jeu mobile — devine la date d'événements historiques",
@@ -128,14 +132,13 @@
         "description": "Portfolio personnel conçu avec Next.js, Tailwind CSS et Framer Motion. Design haut de gamme avec animations scroll-driven, curseur custom, mode sombre/clair et support bilingue FR/EN.",
         "highlights": [
           "Animations scroll-driven avec Framer Motion",
-          "Système i18n FR/EN avec JSON",
+          "Système i18n FR/EN avec fichiers JSON",
           "Dark mode / Light mode sans flash",
           "Design system cohérent avec CSS variables"
         ]
       }
     }
   },
-
   "timeline": {
     "section_label": "04 — Parcours",
     "title": "Mon parcours",
@@ -163,8 +166,6 @@
       }
     }
   },
-
-
   "contact": {
     "section_label": "05 — Contact",
     "title_line1": "Travaillons",
