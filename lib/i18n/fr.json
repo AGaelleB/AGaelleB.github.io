@@ -7,6 +7,8 @@
     "contact": "Contact",
     "cv": "CV"
   },
+
+
   "hero": {
     "label": "Développeuse Web Full-Stack",
     "name_line1": "Anne-Gaëlle",
@@ -16,6 +18,8 @@
     "cta_contact": "Me contacter",
     "social_label": "Retrouvez-moi"
   },
+
+
   "about": {
     "section_label": "01 — À propos",
     "title": "Concevoir des solutions numériques utiles pour des projets à impact",
@@ -32,6 +36,8 @@
       "languages": "Français / Anglais"
     }
   },
+
+
   "skills": {
     "section_label": "02 — Compétences",
     "title": "Ma stack",
@@ -51,6 +57,8 @@
       "5": "Expert"
     }
   },
+
+
   "projects": {
     "section_label": "03 — Projets",
     "title": "Les projets que j'ai développés",
@@ -58,8 +66,69 @@
     "key_highlights": "Points clés",
     "tech_stack": "Stack technique",
     "live_site": "Voir le site ↗",
-    "github": "GitHub ↗"
+    "github": "GitHub ↗",
+    "team": "Projet d'équipe —",
+    "items": {
+      "japan-awaits": {
+        "title": "Japan Awaits — Portail interne",
+        "tagline": "Refonte complète d'un portail de gestion de voyages sur mesure",
+        "description": "Refonte intégrale du portail interne de l'agence Japan Awaits : gestion des réservations, suivi des guides, dépenses, contrats électroniques et tableaux de bord. Architecture React + Inertia.js + Laravel, avec une attention particulière à la séparation des responsabilités.",
+        "highlights": [
+          "Migration Redux → Inertia.js",
+          "Workflow de validation des guides",
+          "Suivi des dépenses par réservation",
+          "Signature électronique de contrats",
+          "Support multilingue FR / EN / JP"
+        ]
+      },
+      "transcendence": {
+        "title": "ft_transcendence",
+        "tagline": "Projet final de l'École 42 — jeu Pong multijoueur complet",
+        "description": "Projet de fin de cursus à l'École 42, réalisé en équipe de 4. Développement d'un jeu Pong en temps réel avec authentification, gestion des profils, tournois, chat en direct et déploiement Dockerisé.",
+        "highlights": [
+          "Jeu Pong temps réel avec WebSockets",
+          "Authentification OAuth 42 + 2FA",
+          "Système de tournois et classements",
+          "Chat en direct entre joueurs",
+          "Architecture microservices sous Docker"
+        ]
+      },
+      "timequest": {
+        "title": "TimeQuest",
+        "tagline": "Jeu mobile — devine la date d'événements historiques",
+        "description": "Application mobile de quiz où les joueurs doivent estimer le plus rapidement possible la date d'événements marquants de l'histoire. Jouable en solo ou en multijoueur. Projet personnel développé en binôme.",
+        "highlights": [
+          "Mode solo et multijoueur",
+          "Base d'événements historiques variés",
+          "Système de score et chronomètre",
+          "Interface mobile-first React Native"
+        ]
+      },
+      "biscotte": {
+        "title": "Biscotte",
+        "tagline": "Application mobile de gestion de recettes personnelles",
+        "description": "Application mobile pour créer, organiser et retrouver ses recettes de cuisine. Stockage local SQLite, interface soignée, gestion des ingrédients, étapes de préparation et photos. Projet personnel en cours.",
+        "highlights": [
+          "CRUD complet des recettes",
+          "Stockage offline avec SQLite",
+          "Gestion des photos de recettes",
+          "Interface mobile-first soignée"
+        ]
+      },
+      "portfolio": {
+        "title": "Portfolio",
+        "tagline": "Ce site — conçu et développé de A à Z",
+        "description": "Portfolio personnel conçu avec Next.js, Tailwind CSS et Framer Motion. Design haut de gamme avec animations scroll-driven, curseur custom, mode sombre/clair et support bilingue FR/EN.",
+        "highlights": [
+          "Animations scroll-driven avec Framer Motion",
+          "Système i18n FR/EN avec JSON",
+          "Dark mode / Light mode sans flash",
+          "Design system cohérent avec CSS variables"
+        ]
+      }
+    }
   },
+
   "timeline": {
     "section_label": "04 — Parcours",
     "title": "Mon cheminement",
@@ -87,6 +156,8 @@
       }
     }
   },
+
+  
   "contact": {
     "section_label": "05 — Contact",
     "title_line1": "Travaillons",
