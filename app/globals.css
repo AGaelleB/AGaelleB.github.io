@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+/* ── Dark theme (default) ── */
+:root, [data-theme="dark"] {
+  --bg: #0a0a0a;
+  --bg-card: #111111;
+  --bg-subtle: #1a1a1a;
+  --text: #f0ede8;
+  --text-muted: #888884;
+  --text-faint: #444440;
+  --accent: #4a6a91;
+  --accent-dim: #4a6a9122;
+  --border: #2a2a2a;
+  --border-hover: #3a3a3a;
+}
+
+/* ── Light theme ── */
+[data-theme="light"] {
+  --bg: #f8f6f2;
+  --bg-card: #ffffff;
+  --bg-subtle: #eeebe6;
+  --text: #18181b;
+  --text-muted: #6b6b68;
+  --text-faint: #b0afa8;
+  --accent: #3a5b81;
+  --accent-dim: #3a5b8122;
+  --border: #e0ddd8;
+  --border-hover: #ccc9c2;
+}
+
+:root {
+  --radius: 12px;
+  --font-display: 'Syne', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+::selection { background: var(--accent); color: var(--bg); }
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border-hover); border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+
+#cursor {
+  position: fixed; width: 8px; height: 8px;
+  background: var(--accent); border-radius: 50%;
+  pointer-events: none; z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s, height 0.2s, opacity 0.2s;
+  mix-blend-mode: difference;
+}
+#cursor-ring {
+  position: fixed; width: 36px; height: 36px;
+  border: 1px solid var(--accent); border-radius: 50%;
+  pointer-events: none; z-index: 9998;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s, height 0.3s, opacity 0.3s;
+  opacity: 0.5;
+}
+
+.section-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--text);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--text) 0%, var(--accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Animation pour le badge de statut (About) */
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}

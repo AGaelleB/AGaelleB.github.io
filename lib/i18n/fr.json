@@ -1,0 +1,99 @@
+{
+  "nav": {
+    "about": "À propos",
+    "skills": "Skills",
+    "projects": "Projets",
+    "timeline": "Parcours",
+    "contact": "Contact",
+    "cv": "CV"
+  },
+  "hero": {
+    "label": "Développeuse Web Full-Stack",
+    "name_line1": "Anne-Gaëlle",
+    "name_line2": "Bonnefoy",
+    "description": "Développeuse full-stack formée à l’École 42 Paris. Je construis des applications web robustes et des interfaces soignées.",
+    "cta_projects": "Voir mes projets",
+    "cta_contact": "Me contacter",
+    "social_label": "Retrouvez-moi"
+  },
+  "about": {
+    "section_label": "01 — À propos",
+    "title": "Concevoir des solutions numériques utiles pour des projets à impact",
+    "badge": "Open to work",
+    "p1": "Après plusieurs années en gestion de projets et suivi financier au sein d’ONG internationales, j’ai choisi de me reconvertir dans le développement web pour transformer ma passion pour la résolution de problèmes en métier.",
+    "p2": "Formée à l’École 42 Paris, j’y ai appris à concevoir et développer des applications en autonomie, avec une approche centrée sur la logique, l’architecture et la qualité du code.",
+    "p3": "Chez Japan Awaits, j'ai travaillé sur des outils métiers internes avec React, TypeScript et Laravel, en portant une attention particulière à l’expérience utilisateur et à la maintenabilité.",
+    "p4": "Mon parcours me donne une vision transversale : comprendre les besoins opérationnels, structurer des solutions efficaces et créer des interfaces réellement utiles pour les équipes qui les utilisent au quotidien.",
+    "location": "Basée à Toulouse — ouverte au remote et à l’hybride",
+    "stats": {
+      "school": "École 42 Paris",
+      "years": "Double profil",
+      "projects": "Tronc Commun validé",
+      "languages": "Français / Anglais"
+    }
+  },
+  "skills": {
+    "section_label": "02 — Compétences",
+    "title": "Ma stack",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "mobile": "Mobile",
+      "tools": "Outils",
+      "languages": "Langages",
+      "softskills": "Soft skills"
+    },
+    "levels": {
+      "1": "Découverte",
+      "2": "Apprentissage",
+      "3": "Autonome",
+      "4": "À l'aise",
+      "5": "Expert"
+    }
+  },
+  "projects": {
+    "section_label": "03 — Projets",
+    "title": "Les projets que j'ai développés",
+    "wip": "En cours",
+    "key_highlights": "Points clés",
+    "tech_stack": "Stack technique",
+    "live_site": "Voir le site ↗",
+    "github": "GitHub ↗"
+  },
+  "timeline": {
+    "section_label": "04 — Parcours",
+    "title": "Mon cheminement",
+    "types": {
+      "work": "Expérience",
+      "education": "Formation",
+      "project": "Projet"
+    },
+    "items": {
+      "japan": {
+        "title": "Développeuse Web Full Stack",
+        "desc": "Migration d'un monolithe WordPress vers une architecture moderne Laravel/React (Inertia.js). Développement de fonctionnalités de bout en bout, intégration d'APIs tierces (Bokun, Google) et gestion de données métiers complexes. Travail collaboratif sous Git avec revues de code systématiques."
+      },
+      "42": {
+        "title": "Architecte en Technologie du Numérique",
+        "desc": "Validation du Tronc Commun : Acquisition d'une base technique solide via des projets complexes en C/C++. Réalisation d'un Shell (Minishell), de projets graphique 3D (Cub3D) et de serveurs réseau. Expertise en gestion manuelle de la mémoire (Stack/Heap), programmation concurrente (Threads/Mutex) et algorithmie avancée. Formation basée sur l'autonomie, la peer-review et la résolution de problèmes sans frameworks."
+      },
+      "piscine": {
+        "title": "Reconversion — Immersion intensive (Piscine 42)",
+        "desc": "Transition professionnelle vers le développement. Épreuve de sélection de 4 semaines : apprentissage accéléré du C et de Shell, résolution de problèmes sous contrainte et validation de la logique algorithmique."
+      },
+      "fiacat": {
+        "title": "Chargée de mission administrative et financière",
+        "desc": "Gestion administrative et financière de projets internationaux à fort impact social et gestion de budgets complexes (UE, AFD). Suivi budgétaire, organisation logistique, rédaction de rapports financiers pour les bailleurs."
+      }
+    }
+  },
+  "contact": {
+    "section_label": "05 — Contact",
+    "title_line1": "Travaillons",
+    "title_line2": "ensemble",
+    "description": "Disponible immédiatement pour des opportunités junior. N'hésitez pas à me contacter pour échanger !",
+    "cta_mail": "M'écrire un mail",
+    "cta_linkedin": "LinkedIn",
+    "footer": "© 2026 Anne-Gaëlle Bonnefoy"
+  }
+}

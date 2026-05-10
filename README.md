@@ -1,67 +1,36 @@
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-# Portfolio
+## Getting Started
 
-Bienvenue sur le repo de mon portfolio personnel ! Ce projet a été conçu pour mettre en valeur mes compétences, mes projets et mon parcours. 
+First, run the development server:
 
-👉 **[Visitez mon portfolio ici](https://agaelleb.github.io/)**
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
----
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## 🖥️ Objectif du projet
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-L’objectif principal de ce site est de fournir une plateforme pour présenter mes **projets réalisés** dans le cadre de ma formation à l'école 42 ainsi que mes projets personnels.
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
----
+## Learn More
 
-## 🚀 Fonctionnalités clés
+To learn more about Next.js, take a look at the following resources:
 
-- **Présentation** : Chaque projet est détaillé avec une description, les technologies utilisées, et des liens vers le code source.
-- **Responsive Design** : Adapté à tous les écrans (ordinateurs, tablettes, smartphones).
-- **Navigation fluide** : Animations douces et interface intuitive.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
----
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## 🛠️ Technologies utilisées
+## Deploy on Vercel
 
-Ce portfolio a été conçu entièrement en **HTML**, **CSS**, et **JavaScript**
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-### Développement :
-- **HTML5** et **CSS3** : pour la structure et le style.
-- **JavaScript** : pour les interactions dynamiques.
-- **Bootstrap 5** : pour une mise en page responsive et des composants élégants.
-- **AOS (Animate on Scroll)** : pour les animations lors du défilement.
-- **Font Awesome** et **Bootstrap Icons** : pour les icônes.
-- **Devicon** : pour afficher les logos des technologies utilisées.
-
-### Outils :
-- **GitHub Pages** : Hébergement gratuit et déploiement facile.
-- **VS Code** : Environnement de développement.
-
----
-
-## 📸 Aperçu visuel
-
-![Aperçu de mon portfolio](assets/images/projects/portfolio.gif)
-
----
-
-## 🌍 Visitez le site
-
-**[Accédez au site en ligne](https://agaelleb.github.io/)**
-
----
-
-## 📝 Notes supplémentaires
-
-- Ce portfolio est un **projet en constante évolution**. J’ajoute régulièrement de nouvelles fonctionnalités.
-- Si vous avez des retours ou des suggestions, n’hésitez pas à me contacter directement via mon [LinkedIn](https://www.linkedin.com/in/anne-gaëlle-bonnefoy-3b7348107/).
-
----
-
-## 📧 Contact
-
-Anne-Gaëlle Bonnefoy  
-- **Linkedin** : [Anne-Gaëlle](https://www.linkedin.com/in/anne-ga%C3%ABlle-bonnefoy-3b7348107/)  
-- **GitHub** : [AGaelleB](https://github.com/AGaelleB)
-
----
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
