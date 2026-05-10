@@ -15,19 +15,21 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: "japan-awaits",
-    stack: ["React", "TypeScript", "Laravel", "Inertia.js", "Tailwind CSS", "MySQL"],
+    stack: ["React", "TypeScript", "Laravel", "Inertia.js", "Tailwind CSS", "PHP"],
     category: "fullstack",
     image: "/projects/japanawaits+logo.png",
-    links: {},
+    links: {
+        live: "https://portal.japanawaits.com/",
+    },
   },
   {
     id: "transcendence",
-    stack: ["JavaScript", "Python", "Django", "Docker", "WebSockets"],
+    stack: ["JavaScript", "Django", "PostgreSQL", "Docker", "WebSockets", "CSS"],
     category: "fullstack",
     image: "/projects/ft_transcendence.gif",
     gif: "/projects/ft_transcendence2.gif",
     links: {
-      github: "https://github.com/AGaelleB/ft_transcendence",
+      github: "https://github.com/AGaelleB/15-ft_transcendence",
     },
     team: 4,
   },
@@ -37,8 +39,9 @@ export const projects: Project[] = [
     category: "systems",
     image: "/projects/Cub3D.gif",
     gif: "/projects/Cub3D.gif",
-    links: {},
-    team: 2,
+    links: {
+      github: "https://github.com/AGaelleB/11-Cub3D",
+    },    team: 2,
   },
   {
     id: "timequest",

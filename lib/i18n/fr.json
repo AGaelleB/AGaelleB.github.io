@@ -82,14 +82,14 @@
       },
       "transcendence": {
         "title": "ft_transcendence",
-        "tagline": "Projet final de l'École 42 — jeu Pong multijoueur complet",
-        "description": "Projet de fin de cursus à l'École 42, réalisé en équipe de 4. Développement d'un jeu Pong en temps réel avec authentification, gestion des profils, tournois, chat en direct et déploiement Dockerisé.",
+        "tagline": "Dernier projet de l'École 42 — Plateforme de jeu multijoueur complète",
+        "description": "Une application web SPA complexe intégrant un jeu Pong temps réel, une gestion d'utilisateurs sécurisée et des techniques graphiques avancées.",
         "highlights": [
-          "Jeu Pong temps réel avec WebSockets",
-          "Authentification OAuth 42 + 2FA",
-          "Système de tournois et classements",
-          "Chat en direct entre joueurs",
-          "Architecture microservices sous Docker"
+          "Authentification sécurisée (JWT, 2FA, OAuth 42)",
+          "IA adverse et actualisation du jeu temps réel (WebSockets)",
+          "Techniques 3D avancées et personnalisation du jeu",
+          "Tableaux de bord (Stats utilisateurs & historiques)",
+          "Support multilingue et accessibilité étendue"
         ]
       },
       "cub3d": {

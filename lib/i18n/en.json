@@ -90,15 +90,15 @@
       },
       "transcendence": {
         "title": "ft_transcendence",
-        "tagline": "École 42 final project — complete multiplayer Pong game",
-        "description": "Final curriculum project at École 42, developed in a team of 4. Real-time Pong game featuring authentication, profile management, tournaments, live chat, and Dockerized deployment.",
-        "highlights": [
-          "Real-time Pong with WebSockets",
-          "OAuth 42 + 2FA authentication",
-          "Tournament and ranking system",
-          "Live player chat",
-          "Microservices architecture with Docker"
-        ]
+          "tagline": "École 42 final project — Full-featured multiplayer gaming platform",
+          "description": "A complex SPA web application featuring real-time Pong, secure user management, and advanced graphical techniques.",
+          "highlights": [
+            "Secure Auth (JWT, 2FA, OAuth 42)",
+            "AI Opponent and real-time game engine (WebSockets)",
+            "Advanced 3D techniques and game customization",
+            "User stats and game history dashboards",
+            "Multi-language support and browser compatibility"
+          ]
       },
       "cub3d": {
         "title": "Cub3D",
@@ -177,7 +177,7 @@
     }
   },
 
-  
+
   "contact": {
     "section_label": "05 — Contact",
     "title_line1": "Let's work",
