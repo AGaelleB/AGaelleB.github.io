@@ -8,6 +8,7 @@
     "cv": "CV"
   },
 
+
   "hero": {
     "label": "Full-Stack Web Developer",
     "name_line1": "Anne-Gaëlle",
@@ -18,14 +19,15 @@
     "social_label": "Follow me"
   },
 
+
   "about": {
     "section_label": "01 — About",
     "title": "Designing purposeful digital solutions for high-impact projects",
     "badge": "Open to work",
-    "p1": "After several years in project management and financial monitoring for international NGOs, I decided to pivot into web development to turn my passion for problem-solving into a career.",
+    "p1": "After several years in project management and financial monitoring for international NGOs, I chose to pivot into web development to turn my passion for problem-solving into a career.",
     "p2": "Trained at École 42 Paris, I learned to design and develop applications independently, with a focus on logic, architecture, and code quality.",
     "p3": "At Japan Awaits, I worked on internal business tools using React, TypeScript, and Laravel, paying close attention to user experience and maintainability.",
-    "p4": "My background gives me a cross-functional perspective: understanding operational needs, structuring efficient solutions, and creating truly useful interfaces for teams in their daily work.",
+    "p4": "My background gives me a cross-functional perspective: understanding operational needs, structuring efficient solutions, and creating truly useful interfaces for the teams using them daily.",
     "location": "Based in Toulouse — open to remote and hybrid work",
     "stats": {
       "school": "École 42 Paris",
@@ -34,6 +36,7 @@
       "languages": "French / English"
     }
   },
+
 
   "skills": {
     "section_label": "02 — Skills",
@@ -62,6 +65,7 @@
     }
   },
 
+
   "projects": {
     "section_label": "03 — Projects",
     "title": "Projects I've worked on:",
@@ -75,7 +79,7 @@
       "japan-awaits": {
         "title": "Japan Awaits — Internal Portal",
         "tagline": "Complete overhaul of a custom travel management portal",
-        "description": "Full redesign of the Japan Awaits agency internal portal: booking management, guide tracking, expenses, e-contracts, and dashboards. Built with React + Inertia.js + Laravel, focusing on separation of concerns.",
+        "description": "Full redesign of the internal portal for Japan Awaits agency: booking management, guide tracking, expenses, e-contracts, and dashboards. Built with React + Inertia.js + Laravel, with a focus on separation of concerns.",
         "highlights": [
           "Redux → Inertia.js migration",
           "Guide validation workflow",
@@ -86,7 +90,7 @@
       },
       "transcendence": {
         "title": "ft_transcendence",
-        "tagline": "École 42 final project — full multiplayer Pong game",
+        "tagline": "École 42 final project — complete multiplayer Pong game",
         "description": "Final curriculum project at École 42, developed in a team of 4. Real-time Pong game featuring authentication, profile management, tournaments, live chat, and Dockerized deployment.",
         "highlights": [
           "Real-time Pong with WebSockets",
@@ -94,6 +98,18 @@
           "Tournament and ranking system",
           "Live player chat",
           "Microservices architecture with Docker"
+        ]
+      },
+      "cub3d": {
+        "title": "Cub3D",
+        "tagline": "Raycasting-based 3D engine inspired by Wolfenstein",
+        "description": "Project developed in a pair as part of the 42 curriculum. Implementation of a 3D rendering engine using raycasting in pure C, without high-level graphics libraries. Displays an immersive first-person navigable world with texture management, collisions, and lighting.",
+        "highlights": [
+          "Raycasting algorithm built from scratch in C",
+          "Real-time first-person 3D rendering",
+          "Texture, sprite, and lighting management",
+          "Collision detection",
+          "Map configuration file parsing"
         ]
       },
       "timequest": {
@@ -123,14 +139,15 @@
         "tagline": "This site — designed and developed from scratch",
         "description": "Personal portfolio built with Next.js, Tailwind CSS, and Framer Motion. High-end design featuring scroll-driven animations, custom cursor, dark/light mode, and bilingual support.",
         "highlights": [
-          "Scroll-driven animations (Framer Motion)",
-          "i18n system (FR/EN) via JSON",
+          "Scroll-driven animations with Framer Motion",
+          "i18n system (FR/EN) via JSON files",
           "Flash-free Dark/Light mode",
           "Consistent Design System with CSS variables"
         ]
       }
     }
   },
+
 
   "timeline": {
     "section_label": "04 — Timeline",
@@ -160,11 +177,12 @@
     }
   },
 
+  
   "contact": {
     "section_label": "05 — Contact",
     "title_line1": "Let's work",
     "title_line2": "together",
-    "description": "Currently available for junior opportunities. Feel free to reach out to discuss your projects!",
+    "description": "Currently available for junior opportunities. Feel free to reach out to chat!",
     "cta_mail": "Email me",
     "cta_linkedin": "LinkedIn",
     "footer": "© 2026 Anne-Gaëlle Bonnefoy"
