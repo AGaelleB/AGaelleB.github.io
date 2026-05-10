@@ -3,9 +3,9 @@
     "about": "About",
     "skills": "Skills",
     "projects": "Projects",
-    "timeline": "Experience",
+    "timeline": "Timeline",
     "contact": "Contact",
-    "cv": "Resume"
+    "cv": "CV"
   },
 
   "hero": {
@@ -13,31 +13,31 @@
     "name_line1": "Anne-Gaëlle",
     "name_line2": "Bonnefoy",
     "description": "Full-stack developer trained at École 42 Paris. I build robust web applications and polished interfaces.",
-    "cta_projects": "View my projects",
+    "cta_projects": "View my work",
     "cta_contact": "Get in touch",
     "social_label": "Follow me"
   },
 
   "about": {
     "section_label": "01 — About",
-    "title": "Designing meaningful digital solutions for high-impact projects",
+    "title": "Designing purposeful digital solutions for high-impact projects",
     "badge": "Open to work",
-    "p1": "After several years in project management and financial monitoring for international NGOs, I chose to pivot into web development to turn my passion for problem-solving into a career.",
-    "p2": "Trained at École 42 Paris, I learned to design and develop applications independently, with an approach centered on logic, architecture, and code quality.",
-    "p3": "At Japan Awaits, I worked on internal business tools using React, TypeScript, and Laravel, with a strong focus on user experience and maintainability.",
-    "p4": "My background gives me a cross-functional perspective: understanding operational needs, structuring efficient solutions, and creating interfaces that are truly useful for the teams using them daily.",
+    "p1": "After several years in project management and financial monitoring for international NGOs, I decided to pivot into web development to turn my passion for problem-solving into a career.",
+    "p2": "Trained at École 42 Paris, I learned to design and develop applications independently, with a focus on logic, architecture, and code quality.",
+    "p3": "At Japan Awaits, I worked on internal business tools using React, TypeScript, and Laravel, paying close attention to user experience and maintainability.",
+    "p4": "My background gives me a cross-functional perspective: understanding operational needs, structuring efficient solutions, and creating truly useful interfaces for teams in their daily work.",
     "location": "Based in Toulouse — open to remote and hybrid work",
     "stats": {
       "school": "École 42 Paris",
       "years": "Dual profile",
-      "projects": "Core Curriculum completed",
+      "projects": "Personal projects",
       "languages": "French / English"
     }
   },
 
   "skills": {
     "section_label": "02 — Skills",
-    "title": "My stack",
+    "title": "My Stack",
     "categories": {
       "frontend": "Frontend",
       "backend": "Backend",
@@ -52,39 +52,46 @@
       "3": "Autonomous",
       "4": "Proficient",
       "5": "Expert"
+    },
+    "items": {
+      "problem_solving": "Problem solving",
+      "collaboration": "Team collaboration",
+      "autonomy": "Autonomy",
+      "communication": "Communication",
+      "adaptability": "Adaptability"
     }
   },
 
   "projects": {
     "section_label": "03 — Projects",
-    "title": "Recent work",
-    "wip": "In progress",
+    "title": "Projects I've worked on:",
+    "wip": "Work in progress",
     "key_highlights": "Key highlights",
     "tech_stack": "Tech stack",
-    "live_site": "Visit site ↗",
+    "live_site": "Live site ↗",
     "github": "GitHub ↗",
     "team": "Team project —",
     "items": {
       "japan-awaits": {
         "title": "Japan Awaits — Internal Portal",
         "tagline": "Complete overhaul of a custom travel management portal",
-        "description": "Full redesign of the internal portal for the Japan Awaits agency: booking management, guide tracking, expenses, e-contracts, and dashboards. Built with React + Inertia.js + Laravel, with a strong emphasis on separation of concerns.",
+        "description": "Full redesign of the Japan Awaits agency internal portal: booking management, guide tracking, expenses, e-contracts, and dashboards. Built with React + Inertia.js + Laravel, focusing on separation of concerns.",
         "highlights": [
           "Redux → Inertia.js migration",
           "Guide validation workflow",
           "Expense tracking per booking",
-          "Electronic contract signature",
-          "Multilingual support (FR / EN / JP)"
+          "Digital contract signatures",
+          "Multi-language support FR / EN / JP"
         ]
       },
       "transcendence": {
         "title": "ft_transcendence",
-        "tagline": "École 42 final project — a complete multiplayer Pong game",
-        "description": "Final curriculum project at École 42, completed in a team of 4. Developed a real-time Pong game featuring authentication, profile management, tournaments, live chat, and Dockerized deployment.",
+        "tagline": "École 42 final project — full multiplayer Pong game",
+        "description": "Final curriculum project at École 42, developed in a team of 4. Real-time Pong game featuring authentication, profile management, tournaments, live chat, and Dockerized deployment.",
         "highlights": [
           "Real-time Pong with WebSockets",
-          "OAuth 42 Authentication + 2FA",
-          "Tournament system and leaderboards",
+          "OAuth 42 + 2FA authentication",
+          "Tournament and ranking system",
           "Live player chat",
           "Microservices architecture with Docker"
         ]
@@ -92,20 +99,20 @@
       "timequest": {
         "title": "TimeQuest",
         "tagline": "Mobile game — guess the dates of historical events",
-        "description": "Mobile quiz application where players must estimate the dates of key historical events as quickly as possible. Playable in solo or multiplayer mode. Personal project developed as a duo.",
+        "description": "Mobile quiz app where players estimate the dates of major historical events as quickly as possible. Playable solo or multiplayer. Personal project developed as a duo.",
         "highlights": [
           "Solo and multiplayer modes",
           "Diverse historical events database",
-          "Scoring system and timer",
+          "Scoring and timer system",
           "Mobile-first React Native interface"
         ]
       },
       "biscotte": {
         "title": "Biscotte",
-        "tagline": "Mobile app for personal recipe management",
-        "description": "Mobile app to create, organize, and find your cooking recipes. Local SQLite storage, polished UI, ingredient management, preparation steps, and photo uploads. Ongoing personal project.",
+        "tagline": "Personal recipe management mobile app",
+        "description": "Mobile app to create, organize, and find personal cooking recipes. Features SQLite local storage, polished UI, ingredient management, preparation steps, and photos. Personal project in progress.",
         "highlights": [
-          "Full CRUD for recipes",
+          "Full recipe CRUD",
           "Offline storage with SQLite",
           "Recipe photo management",
           "Polished mobile-first UI"
@@ -113,21 +120,21 @@
       },
       "portfolio": {
         "title": "Portfolio",
-        "tagline": "This website — designed and developed from scratch",
-        "description": "Personal portfolio built with Next.js, Tailwind CSS, and Framer Motion. High-end design featuring scroll-driven animations, custom cursor, dark/light mode, and bilingual FR/EN support.",
+        "tagline": "This site — designed and developed from scratch",
+        "description": "Personal portfolio built with Next.js, Tailwind CSS, and Framer Motion. High-end design featuring scroll-driven animations, custom cursor, dark/light mode, and bilingual support.",
         "highlights": [
-          "Scroll-driven animations with Framer Motion",
-          "i18n system (FR/EN) using JSON",
+          "Scroll-driven animations (Framer Motion)",
+          "i18n system (FR/EN) via JSON",
           "Flash-free Dark/Light mode",
-          "Cohesive design system with CSS variables"
+          "Consistent Design System with CSS variables"
         ]
       }
     }
   },
 
   "timeline": {
-    "section_label": "04 — Journey",
-    "title": "My path",
+    "section_label": "04 — Timeline",
+    "title": "My Journey",
     "types": {
       "work": "Experience",
       "education": "Education",
@@ -136,19 +143,19 @@
     "items": {
       "japan": {
         "title": "Full Stack Web Developer",
-        "desc": "Migration of a WordPress monolith to a modern Laravel/React (Inertia.js) architecture. End-to-end feature development, third-party API integration (Bokun, Google), and complex business data management. Collaborative work under Git with systematic code reviews."
+        "desc": "Migrated a WordPress monolith to a modern Laravel/React (Inertia.js) architecture. Developed end-to-end features, integrated third-party APIs (Bokun, Google), and managed complex business data. Collaborative work using Git with systematic code reviews."
       },
       "42": {
         "title": "Digital Technology Architect",
-        "desc": "Core Curriculum completion: Built a solid technical foundation through complex projects in C/C++. Developed a Shell (Minishell), 3D graphics projects (Cub3D), and network servers. Expertise in manual memory management (Stack/Heap), concurrent programming (Threads/Mutex), and advanced algorithms. Training based on autonomy, peer-review, and framework-free problem solving."
+        "desc": "Common Core validation: Acquired a solid technical foundation through complex C/C++ projects. Developed a Shell (Minishell), 3D graphics projects (Cub3D), and network servers. Expertise in manual memory management (Stack/Heap), concurrent programming (Threads/Mutex), and advanced algorithms. Peer-review and problem-solving based learning without frameworks."
       },
       "piscine": {
         "title": "Career Change — Intensive Immersion (Piscine 42)",
-        "desc": "Professional transition into development. A 4-week selection trial: accelerated learning of C and Shell, problem-solving under pressure, and algorithmic logic validation."
+        "desc": "Professional transition to development. 4-week selection trial: accelerated learning of C and Shell, problem-solving under pressure, and validation of algorithmic logic."
       },
       "fiacat": {
         "title": "Administrative and Financial Officer",
-        "desc": "Administrative and financial management of international projects with high social impact and complex budget management (EU, AFD). Budget monitoring, logistical organization, and financial reporting for donors."
+        "desc": "Administrative and financial management of high-impact international projects and complex budgets (EU, AFD). Budget monitoring, logistical organization, and financial reporting for donors."
       }
     }
   },

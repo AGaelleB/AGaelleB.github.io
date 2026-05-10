@@ -1,7 +1,7 @@
 {
   "nav": {
     "about": "À propos",
-    "skills": "Skills",
+    "skills": "Compétences",
     "projects": "Projets",
     "timeline": "Parcours",
     "contact": "Contact",
@@ -32,36 +32,43 @@
     "stats": {
       "school": "École 42 Paris",
       "years": "Double profil",
-      "projects": "Tronc Commun validé",
+      "projects": "Projets persos",
       "languages": "Français / Anglais"
     }
   },
 
 
-  "skills": {
-    "section_label": "02 — Compétences",
-    "title": "Ma stack",
-    "categories": {
-      "frontend": "Frontend",
-      "backend": "Backend",
-      "mobile": "Mobile",
-      "tools": "Outils",
-      "languages": "Langages",
-      "softskills": "Soft skills"
+    "skills": {
+      "section_label": "02 — Compétences",
+      "title": "Ma stack",
+      "categories": {
+        "frontend": "Frontend",
+        "backend": "Backend",
+        "mobile": "Mobile",
+        "tools": "Outils",
+        "languages": "Langages",
+        "softskills": "Soft skills"
+      },
+      "levels": {
+        "1": "Découverte",
+        "2": "Apprentissage",
+        "3": "Autonome",
+        "4": "À l'aise",
+        "5": "Expert"
+      },
+      "items": {
+        "problem_solving": "Résolution de problèmes",
+        "collaboration": "Collaboration d'équipe",
+        "autonomy": "Autonomie",
+        "communication": "Communication",
+        "adaptability": "Adaptabilité"
+      }
     },
-    "levels": {
-      "1": "Découverte",
-      "2": "Apprentissage",
-      "3": "Autonome",
-      "4": "À l'aise",
-      "5": "Expert"
-    }
-  },
 
-
+    
   "projects": {
     "section_label": "03 — Projets",
-    "title": "Les projets que j'ai développés",
+    "title": "Des projets sur lesquels j'ai travaillé :",
     "wip": "En cours",
     "key_highlights": "Points clés",
     "tech_stack": "Stack technique",
@@ -131,7 +138,7 @@
 
   "timeline": {
     "section_label": "04 — Parcours",
-    "title": "Mon cheminement",
+    "title": "Mon parcours",
     "types": {
       "work": "Expérience",
       "education": "Formation",
@@ -157,13 +164,13 @@
     }
   },
 
-  
+
   "contact": {
     "section_label": "05 — Contact",
     "title_line1": "Travaillons",
     "title_line2": "ensemble",
     "description": "Disponible immédiatement pour des opportunités junior. N'hésitez pas à me contacter pour échanger !",
-    "cta_mail": "M'écrire un mail",
+    "cta_mail": "Me contacter par mail",
     "cta_linkedin": "LinkedIn",
     "footer": "© 2026 Anne-Gaëlle Bonnefoy"
   }

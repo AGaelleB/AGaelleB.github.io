@@ -87,7 +87,9 @@ export default function Skills() {
                 </div>
                 <div style={{ flex: 1 }}>
                   <div style={{ fontFamily: "var(--font-body)", fontWeight: 500, color: "var(--text)", fontSize: "0.95rem" }}>
-                    {skill.name}
+                    {skill.category === "softskills" 
+                      ? t(`skills.items.${skill.name}` as any) 
+                      : skill.name}
                   </div>
                   <div style={{ fontFamily: "var(--font-mono)", fontSize: "0.65rem", color: "var(--text-muted)", letterSpacing: "0.05em" }}>
                     {/* On utilise t.lang pour garder la cohérence avec le hook */}

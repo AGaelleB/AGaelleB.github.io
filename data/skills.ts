@@ -40,9 +40,8 @@ export const skillCategories: SkillCategory[] = [
       { name: "React", level: 4, category: "frontend", logo: devicon("react") },
       { name: "TypeScript", level: 3, category: "frontend", logo: devicon("typescript") },
       { name: "Next.js", level: 2, category: "frontend", logo: devicon("nextjs", "original") },
-      { name: "Tailwind CSS", level: 4, category: "frontend", logo: devicon("tailwindcss", "plain") },
+      { name: "Tailwind CSS", level: 4, category: "frontend", logo: devicon("tailwind", "original") },
       { name: "HTML / CSS", level: 4, category: "frontend", logo: devicon("html5") },
-      { name: "Framer Motion", level: 2, category: "frontend", logo: icon("✨") },
     ],
   },
 
@@ -51,7 +50,7 @@ export const skillCategories: SkillCategory[] = [
     labelFr: "Backend",
     labelEn: "Backend",
     skills: [
-      { name: "Laravel", level: 3, category: "backend", logo: devicon("laravel", "plain") },
+      { name: "Laravel", level: 3, category: "backend", logo: devicon("laravel", "original") },
       { name: "PHP", level: 3, category: "backend", logo: devicon("php") },
       { name: "MySQL", level: 3, category: "backend", logo: devicon("mysql") },
       { name: "REST API", level: 3, category: "backend", logo: icon("🔗") },
@@ -87,9 +86,8 @@ export const skillCategories: SkillCategory[] = [
     labelEn: "Languages",
     skills: [
       { name: "JavaScript", level: 4, category: "languages", logo: devicon("javascript") },
-      { name: "C / C++", level: 3, category: "languages", logo: devicon("c") },
-      { name: "Python", level: 2, category: "languages", logo: devicon("python") },
-    ],
+      { name: "C++", level: 3, category: "languages", logo: devicon("cplusplus") },
+      { name: "C", level: 3, category: "languages", logo: devicon("c") },],
   },
 
   {
@@ -97,12 +95,11 @@ export const skillCategories: SkillCategory[] = [
     labelFr: "Soft skills",
     labelEn: "Soft skills",
     skills: [
-      { name: "Problem solving", level: 3, category: "softskills", logo: icon("🧠") },
-      { name: "Team collaboration", level: 4, category: "softskills", logo: icon("👥") },
-      { name: "Autonomy", level: 5, category: "softskills", logo: icon("⚡") },
-      { name: "Communication", level: 4, category: "softskills", logo: icon("💬") },
-      { name: "Adaptability", level: 4, category: "softskills", logo: icon("🔄") },
-    ],
+      { name: "problem_solving", level: 3, category: "softskills", logo: icon("🧠") },
+      { name: "collaboration", level: 4, category: "softskills", logo: icon("👥") },
+      { name: "autonomy", level: 5, category: "softskills", logo: icon("⚡") },
+      { name: "communication", level: 4, category: "softskills", logo: icon("💬") },
+      { name: "adaptability", level: 4, category: "softskills", logo: icon("🔄") },],
   },
 ];
 

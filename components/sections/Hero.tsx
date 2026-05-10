@@ -65,7 +65,7 @@ export default function Hero() {
           variants={fadeUp}
           style={{
             fontFamily: "var(--font-display)",
-            fontSize: "clamp(3rem, 8vw, 7rem)",
+            fontSize: "clamp(2rem, 8vw, 7rem)",
             fontWeight: 800,
             lineHeight: 0.95,
             letterSpacing: "-0.03em",

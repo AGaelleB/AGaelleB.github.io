@@ -21,12 +21,20 @@ export default function About() {
   return (
 
     <section id="about" ref={ref} style={{ padding: "8rem 2rem", maxWidth: "1200px", margin: "0 auto" }}>
-      <div style={{ 
+      {/* <div style={{ 
         display: "grid", 
         gridTemplateColumns: "1fr 1fr", 
         gap: "6rem", 
         alignItems: "stretch"
+      }}> */}
+
+      <div style={{ 
+        display: "grid", 
+        gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", 
+        gap: "3rem",
+        alignItems: "stretch"
       }}>
+
 
         {/* Left: photo */}
         <motion.div
@@ -36,7 +44,7 @@ export default function About() {
           style={{ 
             position: "relative", 
             height: "100%",
-            minHeight: "600px"
+            minHeight: "400px"
           }}
         >
           <div style={{
