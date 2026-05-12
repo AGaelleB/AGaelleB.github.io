@@ -73,10 +73,14 @@ export const skillCategories: SkillCategory[] = [
     labelFr: "Outils",
     labelEn: "Tools",
     skills: [
-      { name: "Git", level: 4, category: "tools", logo: devicon("git") },
-      { name: "GitHub", level: 4, category: "tools", logo: devicon("github") },
-      { name: "Figma", level: 2, category: "tools", logo: devicon("figma") },
-      { name: "Docker", level: 1, category: "tools", logo: devicon("docker", "plain") },
+      { name: "Git",            level: 4, category: "tools", logo: devicon("git", "original") },
+      { name: "GitHub",         level: 4, category: "tools", logo: devicon("github", "original") },
+      { name: "Figma",          level: 2, category: "tools", logo: devicon("figma", "original") },
+      { name: "Docker",         level: 1, category: "tools", logo: devicon("docker", "plain") },
+      { name: "Android Studio", level: 1, category: "tools", logo: devicon("androidstudio", "original") },
+      { name: "VS Code",        level: 1, category: "tools", logo: devicon("vscode", "original") },
+      { name: "Bash",           level: 1, category: "tools", logo: devicon("bash", "original") },
+      { name: "Notion",         level: 1, category: "tools", logo: devicon("notion", "original") },
     ],
   },
 
